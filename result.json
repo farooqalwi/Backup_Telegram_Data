@@ -1,0 +1,3 @@
+[
+ "{\"_\": \"MessageService\", \"id\": 1, \"peer_id\": {\"_\": \"PeerChannel\", \"channel_id\": 1410035294}, \"date\": \"2020-10-30T06:36:47+00:00\", \"action\": {\"_\": \"MessageActionChannelCreate\", \"title\": \"Virtual University of Pakistan\"}, \"out\": false, \"mentioned\": false, \"media_unread\": false, \"silent\": false, \"post\": true, \"legacy\": false, \"from_id\": null, \"reply_to\": null, \"ttl_period\": null}"
+]
