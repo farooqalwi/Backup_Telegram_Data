@@ -1,8 +1,8 @@
 from telethon.sync import TelegramClient
 import json
 
-api_id=3171
-api_hash='39da8f7f70b846'
+api_id=31753431
+api_hash='39da8f7f70b84e0a7128624651fb6706'
 
 client = TelegramClient('test_session', api_id, api_hash)
 client.start()
@@ -23,9 +23,9 @@ for message in client.iter_messages('vuopak', limit=1, reverse=True):
 
     # convert string to dictionary
     str_dict = json.loads(json_string) 
-    
-    if 'id' in str_dict:
-        # addItem['id'] = str_dict['id']
+    for key, value in str_dict.items():
+        if key == "id" or key == "date" or key == "photo" or key == "file" or key == "thumbnail":
+            addItem(key, value)
 
     # client.download_media(message)
 
@@ -34,5 +34,5 @@ for message in client.iter_messages('vuopak', limit=1, reverse=True):
 print(type(json_dict))
 print(json_dict)
 
-# with open('result.json', 'w', encoding='utf-8') as file:
-#     json.dump(json_list, file, ensure_ascii=False, indent=1)
+with open('result.json', 'w', encoding='utf-8') as file:
+    json.dump(json_dict, file, ensure_ascii=False, indent=1)
