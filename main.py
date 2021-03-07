@@ -10,7 +10,7 @@ client.start()
 json_list = list()
 
 
-for message in client.iter_messages('vuopak', limit=10, reverse=True):
+for message in client.iter_messages('vuopak', limit=100, reverse=True):
     # print(dir(message))
     # print(message.date)
     # print(message.id)
@@ -26,9 +26,11 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
     json_dict = dict()
 
     for key, value in str_dict.items():
-        if key == "id" or key == "date" or key == "photo" or key == "file" or key == "thumbnail":
+        if key == "id" or key == "date" or (key == "edit_date" and value != None ) or key == "photo" or key == "file" or key == "thumbnail" or key == "message":
             json_dict[key] = value
-        
+    
+
+
     # insert dict into list
     json_list.append(json_dict)
 
