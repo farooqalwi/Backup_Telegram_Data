@@ -51,6 +51,108 @@
    "id": 10,
    "date": "2020-11-09T09:28:45+00:00",
    "text": "On 2020-11-06, MSCS department sent out this email to all MSCS students from mscs_courseselection@vu.edu.pk"
+  },
+  {
+   "id": 11,
+   "date": "2020-11-09T11:29:14+00:00",
+   "text": "To find email addresses of other VU students, log in to your VU Gmail account and then visit this link:\n\nhttps://contacts.google.com/directory\n\nIt will take some time to load. Eventually, it will display all the email addresses that are present in the VU organization.\n\nThe administrators have kept some addresses hidden probably for privacy and to fight spam.\n\nYou can look up other students from your batch, using your VU ID.\n\nKindly do not use abuse this system. So far, VU has not provided any way for students to communicate with each other. If you misuse it, then administrators can hide the directory, and we will not be able to discover our fellow batch members."
+  },
+  {
+   "id": 12,
+   "date": "2020-11-09T11:58:44+00:00",
+   "text": "Issuance of 1st Voucher to Continuing Students (Fall-2020 Semester)\nPublished On:  Monday, November 9, 2020 \n\nStudents are informed that the University has issued first voucher (Semester Enrollment fee + One Course fee) for Fall, 2020 semester to continuing students, who have made course selection from October 29, 2020 to November 09, 2020. Furthermore, the University has already issued said fee voucher to those who made course selection prior to October 29, 2020.\n\nYou are directed to deposit payable voucher as per given schedule.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4351"
+  },
+  {
+   "id": 13,
+   "date": "2020-11-09T12:04:16+00:00",
+   "text": "VU has published the date of mid term exams.\n\n2020-12-26 (December 26)\n\nSource: https://www.vu.edu.pk/StudentServices/AcademicCalendar.aspx"
+  },
+  {
+   "id": 14,
+   "date": "2020-11-09T12:04:23+00:00"
+  },
+  {
+   "id": 15,
+   "date": "2020-11-09T13:58:38+00:00",
+   "text": "CS701 Theory of Computation\nRequired subject for MSCS students\n\nIntroduction to the theory of computation\nby Michael Sipser\n3rd Edition"
+  },
+  {
+   "id": 16,
+   "date": "2020-11-09T14:02:23+00:00",
+   "text": "CS701 Theory of Computation\nIt's a required subject for MSCS students.\n\nIntroduction to the theory of computation\nby Michael Sipser\n2nd Edition"
+  },
+  {
+   "id": 17,
+   "date": "2020-11-09T14:27:57+00:00",
+   "text": "CS701 Theory of Computation\nIt's a required subject for MSCS students.\n\nAll lecture slides have been merged into one PDF.\n\nSome slides are incorrectly labelled and repeated in the source material.\nI have tried to correct the issues as much as possible.",
+   "edit_date": "2020-11-09T14:28:55+00:00"
+  },
+  {
+   "id": 18,
+   "date": "2020-11-10T07:41:12+00:00",
+   "text": "CS702 - Advanced Algorithms Analysis and Design\nRequired subject for MSCS\n\nI have converted all the PPT slides to PDF and then merged them into one."
+  },
+  {
+   "id": 19,
+   "date": "2020-11-10T09:26:52+00:00",
+   "text": "Federal Minister for IT om, Syed Ameen Ul Haq visited Virtual University\nPublished On:  Tuesday, November 10, 2020 \n\n> He also visited Virtual University, M.A Jinnah Campus (Head Office) and inaugurated the newly launched “Learning Management System” for VU students.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4352"
+  },
+  {
+   "id": 20,
+   "date": "2020-11-10T10:05:08+00:00",
+   "text": "⚠️ Attention MSCS 2020 students ⚠️\nThe bug in VULMS course selection has been fixed.\n\nPlease make your course selection ASAP.",
+   "edit_date": "2020-11-10T10:06:26+00:00"
+  },
+  {
+   "id": 21,
+   "date": "2020-11-10T10:09:19+00:00",
+   "text": "Finalize your course selection by 2020-11-12",
+   "edit_date": "2020-11-10T11:00:33+00:00"
+  },
+  {
+   "id": 22,
+   "date": "2020-11-10T12:46:39+00:00",
+   "text": "CS719-Research Methodologies is not available for selection in the first semester of MSCS.\n\nOfficial VU response:\nYou will be able to select it in the second semester."
+  },
+  {
+   "id": 23,
+   "date": "2020-11-10T13:11:12+00:00",
+   "text": "⚠️ About MSCS course selection ⚠️\nOfficial VU response:\n\nAs per HEC guidelines, \nIn first semester, you should choose two required courses and one course from your specialization. \n\nYou can choose courses from any semester but it is better to choose two required courses and one course from your specialization even if these are 2nd or any semester courses."
+  },
+  {
+   "id": 24,
+   "date": "2020-11-11T09:25:44+00:00",
+   "text": "Board of Governors of Virtual University had a meeting with the President of Pakistan\nPublished On:  Wednesday, November 11, 2020 \n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4354"
+  },
+  {
+   "id": 25,
+   "date": "2020-11-11T09:28:46+00:00",
+   "text": "President of Pakistan, Dr Arif Alvi tweeted about Virtual University.\nHe said\n\nVitual University will lead the way towards a future of non-elitist higher education, available at much lower cost than that available at physical brick & mortar universities. A great opportunity for those who pass FA/FSc, need to earn livelihood, & at same time study for BA/BSc."
+  },
+  {
+   "id": 27,
+   "date": "2020-11-11T09:31:48+00:00",
+   "text": "Gudielines for MSCS Course Selection\nOfficial VU response\n\nYou can select minimum one and maximum three courses in a semester. \n\nPlease see the attached image for the generic semester wise guideline for course selection, as recommended by HEC."
+  },
+  {
+   "id": 28,
+   "date": "2020-11-12T12:59:11+00:00",
+   "text": "Course Selection due date has been extended up to Wednesday, November 18\nPublished On:  Thursday, November 12, 2020 \n\nIt is hereby intimated that course selection due date for add/drop/replace course(s) has been extended up to Wednesday, November 18, 2020.\n\nStudents’ failing to enroll/ select any course(s) by the last date will be treated as “Inactive Student” such students may continue their studies after “Readmission” as per the University policy.\n\nNote:\n\n1.    Students' will be responsible for his/her late course enrollment, any quizzes or assignment(s) if have been given or taken; \n2.    No request for the enrollment of courses and unfreeze of semester will be entertained after above said date;\n3.    Fee voucher once issued will not be adjusted/revised.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4355"
+  },
+  {
+   "id": 29,
+   "date": "2020-11-12T13:00:23+00:00",
+   "text": "Last date to apply for need based scholarship has been extended to Wednesday, November 18, 2020\nPublished On:  Thursday, November 12, 2020\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4356"
+  },
+  {
+   "id": 30,
+   "date": "2020-11-13T11:38:13+00:00",
+   "text": "Last chance to deposit fee for admission in fall 2020 session\nPublished On:  Friday, November 13, 2020\n\nApplicants whose Admission Application Forms were accepted for admission in their respective study program are informed to deposit “Admission Fee Voucher” on or before Wednesday, November 18, 2020 for the confirmation of their admissions.\n\nNo request will be entertained after November 18, 2020. \n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4357"
+  },
+  {
+   "id": 31,
+   "date": "2020-11-14T10:49:57+00:00",
+   "text": "CS706 - Software Quality Assurance\nLecture Slides\n\nI have converted all the slides into PDF and them merged them into a single file."
   }
  ]
 }

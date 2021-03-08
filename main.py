@@ -10,13 +10,13 @@ client.start()
 json_list = list()
 
 
-for message in client.iter_messages('vuopak', limit=10, reverse=True):
+for message in client.iter_messages('vuopak', limit=30, reverse=True):
     # print(dir(message))
     # print(message.date)
     # print(message.id)
     # print(message.text)
     # print(message.raw_text)
-    # print(message.to_json())
+    print(message.to_json())
 
 
     json_string = message.to_json()
@@ -47,10 +47,8 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
 
 
 json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
-
+# putting list to a dict in order to obtain result.json file
 json_dict["messages"] = json_list
-
-print(json_dict)
 
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
