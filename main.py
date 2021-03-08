@@ -52,6 +52,6 @@ json_dict["messages"] = json_list
 
 print(json_dict)
 
-with open('result.json', 'w', encoding='utf-8') as file:
+with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
