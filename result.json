@@ -1,509 +1,56 @@
-[
- {
-  "id": 1,
-  "date": "2020-10-30T06:36:47+00:00"
- },
- {
-  "id": 2,
-  "date": "2020-10-30T06:39:19+00:00",
-  "message": ""
- },
- {
-  "id": 3,
-  "date": "2020-10-30T06:39:47+00:00",
-  "message": "Issuance of First Voucher to Continuing Students (Fall, 2020)\n\nPublished On:  Oct 29, 2020\n\nStudents are informed that the University has issued first voucher (Semester Enrollment fee + One Course fee) for Fall, 2020 semester to continuing students, who have made course selection from October 22, 2020 to October 29, 2020. \n\nYou are directed to deposit payable voucher as per given schedule."
- },
- {
-  "id": 4,
-  "date": "2020-10-30T06:52:18+00:00"
- },
- {
-  "id": 5,
-  "date": "2020-10-30T06:55:50+00:00",
-  "message": "MS Computer Science (Fall 2020 Semester)\n\nMerit List of Candidates Eligible for Interview Published\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4348"
- },
- {
-  "id": 6,
-  "date": "2020-10-30T07:20:26+00:00",
-  "message": ""
- },
- {
-  "id": 7,
-  "date": "2020-10-30T07:21:06+00:00",
-  "message": ""
- },
- {
-  "id": 8,
-  "date": "2020-11-05T13:39:51+00:00",
-  "message": "Course selection is not working for MSCS students.\n\nOn 2020-11-05, MS CS department has reported that this error has been referred to the IT department and will get fixed soon."
- },
- {
-  "id": 9,
-  "date": "2020-11-09T09:24:44+00:00",
-  "message": "Extension in due date of Need based Scholarship for Fall, 2020 \nPublished On:  Friday, November 6, 2020\n\nAll the students are informed that last date to apply for need based scholarship (Fall'2020 semester) has been extended till Thursday, November 12, 2020.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4350"
- },
- {
-  "id": 10,
-  "date": "2020-11-09T09:28:45+00:00",
-  "message": "On 2020-11-06, MSCS department sent out this email to all MSCS students from mscs_courseselection@vu.edu.pk"
- },
- {
-  "id": 11,
-  "date": "2020-11-09T11:29:14+00:00",
-  "message": "To find email addresses of other VU students, log in to your VU Gmail account and then visit this link:\n\nhttps://contacts.google.com/directory\n\nIt will take some time to load. Eventually, it will display all the email addresses that are present in the VU organization.\n\nThe administrators have kept some addresses hidden probably for privacy and to fight spam.\n\nYou can look up other students from your batch, using your VU ID.\n\nKindly do not use abuse this system. So far, VU has not provided any way for students to communicate with each other. If you misuse it, then administrators can hide the directory, and we will not be able to discover our fellow batch members."
- },
- {
-  "id": 12,
-  "date": "2020-11-09T11:58:44+00:00",
-  "message": "Issuance of 1st Voucher to Continuing Students (Fall-2020 Semester)\nPublished On:  Monday, November 9, 2020 \n\nStudents are informed that the University has issued first voucher (Semester Enrollment fee + One Course fee) for Fall, 2020 semester to continuing students, who have made course selection from October 29, 2020 to November 09, 2020. Furthermore, the University has already issued said fee voucher to those who made course selection prior to October 29, 2020.\n\nYou are directed to deposit payable voucher as per given schedule.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4351"
- },
- {
-  "id": 13,
-  "date": "2020-11-09T12:04:16+00:00",
-  "message": "VU has published the date of mid term exams.\n\n2020-12-26 (December 26)\n\nSource: https://www.vu.edu.pk/StudentServices/AcademicCalendar.aspx"
- },
- {
-  "id": 14,
-  "date": "2020-11-09T12:04:23+00:00"
- },
- {
-  "id": 15,
-  "date": "2020-11-09T13:58:38+00:00",
-  "message": "CS701 Theory of Computation\nRequired subject for MSCS students\n\nIntroduction to the theory of computation\nby Michael Sipser\n3rd Edition"
- },
- {
-  "id": 16,
-  "date": "2020-11-09T14:02:23+00:00",
-  "message": "CS701 Theory of Computation\nIt's a required subject for MSCS students.\n\nIntroduction to the theory of computation\nby Michael Sipser\n2nd Edition"
- },
- {
-  "id": 17,
-  "date": "2020-11-09T14:27:57+00:00",
-  "message": "CS701 Theory of Computation\nIt's a required subject for MSCS students.\n\nAll lecture slides have been merged into one PDF.\n\nSome slides are incorrectly labelled and repeated in the source material.\nI have tried to correct the issues as much as possible.",
-  "edit_date": "2020-11-09T14:28:55+00:00"
- },
- {
-  "id": 18,
-  "date": "2020-11-10T07:41:12+00:00",
-  "message": "CS702 - Advanced Algorithms Analysis and Design\nRequired subject for MSCS\n\nI have converted all the PPT slides to PDF and then merged them into one."
- },
- {
-  "id": 19,
-  "date": "2020-11-10T09:26:52+00:00",
-  "message": "Federal Minister for IT om, Syed Ameen Ul Haq visited Virtual University\nPublished On:  Tuesday, November 10, 2020 \n\n> He also visited Virtual University, M.A Jinnah Campus (Head Office) and inaugurated the newly launched “Learning Management System” for VU students.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4352"
- },
- {
-  "id": 20,
-  "date": "2020-11-10T10:05:08+00:00",
-  "message": "⚠️ Attention MSCS 2020 students ⚠️\nThe bug in VULMS course selection has been fixed.\n\nPlease make your course selection ASAP.",
-  "edit_date": "2020-11-10T10:06:26+00:00"
- },
- {
-  "id": 21,
-  "date": "2020-11-10T10:09:19+00:00",
-  "message": "Finalize your course selection by 2020-11-12",
-  "edit_date": "2020-11-10T11:00:33+00:00"
- },
- {
-  "id": 22,
-  "date": "2020-11-10T12:46:39+00:00",
-  "message": "CS719-Research Methodologies is not available for selection in the first semester of MSCS.\n\nOfficial VU response:\nYou will be able to select it in the second semester."
- },
- {
-  "id": 23,
-  "date": "2020-11-10T13:11:12+00:00",
-  "message": "⚠️ About MSCS course selection ⚠️\nOfficial VU response:\n\nAs per HEC guidelines, \nIn first semester, you should choose two required courses and one course from your specialization. \n\nYou can choose courses from any semester but it is better to choose two required courses and one course from your specialization even if these are 2nd or any semester courses."
- },
- {
-  "id": 24,
-  "date": "2020-11-11T09:25:44+00:00",
-  "message": "Board of Governors of Virtual University had a meeting with the President of Pakistan\nPublished On:  Wednesday, November 11, 2020 \n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4354"
- },
- {
-  "id": 25,
-  "date": "2020-11-11T09:28:46+00:00",
-  "message": "President of Pakistan, Dr Arif Alvi tweeted about Virtual University.\nHe said\n\nVitual University will lead the way towards a future of non-elitist higher education, available at much lower cost than that available at physical brick & mortar universities. A great opportunity for those who pass FA/FSc, need to earn livelihood, & at same time study for BA/BSc."
- },
- {
-  "id": 27,
-  "date": "2020-11-11T09:31:48+00:00",
-  "message": "Gudielines for MSCS Course Selection\nOfficial VU response\n\nYou can select minimum one and maximum three courses in a semester. \n\nPlease see the attached image for the generic semester wise guideline for course selection, as recommended by HEC."
- },
- {
-  "id": 28,
-  "date": "2020-11-12T12:59:11+00:00",
-  "message": "Course Selection due date has been extended up to Wednesday, November 18\nPublished On:  Thursday, November 12, 2020 \n\nIt is hereby intimated that course selection due date for add/drop/replace course(s) has been extended up to Wednesday, November 18, 2020.\n\nStudents’ failing to enroll/ select any course(s) by the last date will be treated as “Inactive Student” such students may continue their studies after “Readmission” as per the University policy.\n\nNote:\n\n1.    Students' will be responsible for his/her late course enrollment, any quizzes or assignment(s) if have been given or taken; \n2.    No request for the enrollment of courses and unfreeze of semester will be entertained after above said date;\n3.    Fee voucher once issued will not be adjusted/revised.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4355"
- },
- {
-  "id": 29,
-  "date": "2020-11-12T13:00:23+00:00",
-  "message": "Last date to apply for need based scholarship has been extended to Wednesday, November 18, 2020\nPublished On:  Thursday, November 12, 2020\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4356"
- },
- {
-  "id": 30,
-  "date": "2020-11-13T11:38:13+00:00",
-  "message": "Last chance to deposit fee for admission in fall 2020 session\nPublished On:  Friday, November 13, 2020\n\nApplicants whose Admission Application Forms were accepted for admission in their respective study program are informed to deposit “Admission Fee Voucher” on or before Wednesday, November 18, 2020 for the confirmation of their admissions.\n\nNo request will be entertained after November 18, 2020. \n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4357"
- },
- {
-  "id": 31,
-  "date": "2020-11-14T10:49:57+00:00",
-  "message": "CS706 - Software Quality Assurance\nLecture Slides\n\nI have converted all the slides into PDF and them merged them into a single file."
- },
- {
-  "id": 32,
-  "date": "2020-11-16T13:11:05+00:00",
-  "message": "Issuance of 1st Voucher to Continuing Students (Fall'2020 Semester)\nPublished On:  Monday, November 16, 2020\n\nStudents are informed that the University has issued first voucher (Semester Enrollment fee + One Course fee) for Fall, 2020 semester to continuing students, who have made course selection from November 09, 2020 to November 16, 2020. Furthermore, the University has already issued said fee voucher to those who made course selection prior to November 09, 2020.\n\nYou are directed to deposit payable voucher as per given schedule.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4358"
- },
- {
-  "id": 33,
-  "date": "2020-11-17T18:15:52+00:00",
-  "message": "CS702 - Advanced Algorithms Analysis and Design\nLecture Handouts"
- },
- {
-  "id": 35,
-  "date": "2020-11-17T18:21:10+00:00",
-  "message": "CS701 - Theory of Computation\nLecture Handouts"
- },
- {
-  "id": 36,
-  "date": "2020-11-17T18:22:39+00:00",
-  "message": "CS706 - Software Quality Assurance \nLecture Handouts"
- },
- {
-  "id": 37,
-  "date": "2020-11-17T18:31:14+00:00",
-  "message": "CS702 - Advanced Algorithms Analysis and Design\nComplementary Book\nVery important"
- },
- {
-  "id": 38,
-  "date": "2020-11-18T07:24:09+00:00",
-  "message": "CS706 - Software Quality Assurance\nSkype Session"
- },
- {
-  "id": 39,
-  "date": "2020-11-18T07:25:11+00:00",
-  "message": "CS702 - Advanced Algorithms Analysis and Design\nSkpe Session"
- },
- {
-  "id": 40,
-  "date": "2020-11-19T08:50:18+00:00",
-  "message": "CS701 - Theory of Computation \nJFLAP 7.0 Simulator Tutorial for designing Turing Machines \n\nPlease visit following tutorial link for using the JFLAP 7.0 Simulator. \n\nJFLAP is software for experimenting with formal languages topics including nondeterministic finite automata, Turing machines, and multi-tape Turing machines. \n\nIn addition to constructing and testing examples for these, JFLAP allows one to experiment with construction proofs from one form to another. \n\nThis tutorial will help design the Turing machine in upcoming your assignment task.\n\nhttp://www.jflap.org/tutorial/"
- },
- {
-  "id": 41,
-  "date": "2020-11-19T08:51:58+00:00",
-  "message": "CS701 - Theory of Computation\nWeekly Online Interactive Sessions\n\nWe will have online interactive sessions every week through Skype on:\n\nMonday from 3:00 PM to 4:00 PM\n\nTopic/Agenda for these sessions will be “Topics discussed in lectures scheduled in the previous week”. \n\nSkype id to join the session:        saima.vu1\n\nPlease send a request to the above mentioned skype id. Enter your VU ID and name to join the session during the designated time."
- },
- {
-  "id": 42,
-  "date": "2020-11-19T08:53:22+00:00",
-  "message": "Expected date and topics of the first assignment\nOffifical Response\n\nAssignment may be uploaded next week, and it will cover all delivered lectures, uptill now."
- },
- {
-  "id": 43,
-  "date": "2020-11-20T14:20:37+00:00",
-  "message": "CS702 - Advanced Algorithms Analysis and Design\nComplementary Book\n3rd Edition"
- },
- {
-  "id": 44,
-  "date": "2020-11-20T18:17:16+00:00",
-  "message": "Issuance of First Voucher to Continuing Students (Fall'2020 Semester) \nPublished On:  Friday, November 20, 2020\n\nStudents are informed that the University has issued first voucher (Semester Enrollment fee + One Course fee) for Fall, 2020 semester to continuing students, who have made course selection from November 16, 2020 to November 20, 2020. Furthermore, the University has already issued said fee voucher to those who made course selection prior to November 16, 2020.\n\nYou are directed to deposit payable voucher as per given schedule.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4359"
- },
- {
-  "id": 45,
-  "date": "2020-11-20T18:17:44+00:00",
-  "message": "Issuance of Semester Voucher for Fall, 2020\nPublished On:  Friday, November 20, 2020\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4360"
- },
- {
-  "id": 46,
-  "date": "2020-11-22T23:51:42+00:00",
-  "message": "CS712 - Distributed DBMS \nPrinciples Of Distributed Database Systems\nM. Tamer Özsu, Patrick Valduriez"
- },
- {
-  "id": 47,
-  "date": "2020-11-23T09:02:21+00:00",
-  "message": "CS701 - Theory of Computation \nAssignment 1\nDue Date: 2020-11-30\n🚨Total Marks: 50🚨"
- },
- {
-  "id": 48,
-  "date": "2020-11-23T09:02:25+00:00",
-  "message": ""
- },
- {
-  "id": 49,
-  "date": "2020-11-23T13:58:46+00:00",
-  "message": "JFLAP 7.1 version"
- },
- {
-  "id": 50,
-  "date": "2020-11-23T14:27:33+00:00",
-  "message": "Java SE\nSetup for Windows 64bit"
- },
- {
-  "id": 51,
-  "date": "2020-11-23T15:41:58+00:00",
-  "message": "CS701 - Theory of Computation \nAssignment 1 - 2020-11-23\n\nSteps to run JFLAP\n\n1. Install latest Java\nJava8 is not necessary. Get the latest one. I ran the JFLAP from OpenJDK 15\nDirect Download: https://t.me/vuopak/50\n\n2. Download the jar file\nDirect Download: https://t.me/vuopak/49\n\n3. Double click on the jar file\nOr\n\nOpen command line and write\njava -jar <path to the jar file>",
-  "edit_date": "2020-11-23T15:42:06+00:00"
- },
- {
-  "id": 52,
-  "date": "2020-11-24T09:41:13+00:00",
-  "message": "This screenshot was taken at 14:40 (2:40PM) on 2020-11-24"
- },
- {
-  "id": 53,
-  "date": "2020-11-24T09:52:52+00:00",
-  "message": "CS701 - Theory of Computation \nYouTube playlist of VU lectures\n\nhttps://www.youtube.com/watch?v=oF92Z7qVivs&list=PL6FD2A444D412987C"
- },
- {
-  "id": 54,
-  "date": "2020-11-24T09:53:21+00:00",
-  "message": "CS702 - Advanced Algorithms Analysis and Design\nYouTube playlist of VU lectures\n\nhttps://www.youtube.com/watch?v=dmpDMkiTB8M&list=PL104E439436B0B73E"
- },
- {
-  "id": 55,
-  "date": "2020-11-24T09:53:47+00:00",
-  "message": "CS710 Mobile and Pervasive Computing\nYouTube playlist of VU lectures\n\nhttps://www.youtube.com/watch?v=WOC931tF3IM&list=PLFX_EwFvKKWMzUgvb5xT2bjA8o6nrblK8"
- },
- {
-  "id": 56,
-  "date": "2020-11-24T17:25:48+00:00",
-  "message": "VU websites are under maintenance due to a technical issue. Please check back at 10 PM for updates. Inconvenience is regretted. \n\n(Checked at 22:25)"
- },
- {
-  "id": 57,
-  "date": "2020-11-25T07:26:55+00:00",
-  "message": "LMS has resumed WORKING partially"
- },
- {
-  "id": 58,
-  "date": "2020-11-27T09:29:31+00:00",
-  "message": "LMS Service Outage\nPublished On:  Thursday, November 26, 2020 \n\nWe regret the recent outage of our LMS service which was impacted due to certain externally generated non-genuine traffic. The ICT teams worked diligently to identify and mitigate the issue in order to normalize our services. \n\nInconvenience caused is highly regretted. \n\nPlease check with your respective course instructors for any rescheduling in your semester activities.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4361"
- },
- {
-  "id": 59,
-  "date": "2020-11-27T09:30:17+00:00",
-  "message": "Extension in due date of October'2020 Vouchers \n(Due date was November 23, 2020)\nPublished On:  Thursday, November 26, 2020 \n\nDue to technical issues arising in LMS services, October'2020 fee vouchers which had due date of November 23, 2020 has been extended till November 27, 2020.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4362",
-  "edit_date": "2020-11-27T09:30:33+00:00"
- },
- {
-  "id": 60,
-  "date": "2020-11-27T09:31:12+00:00",
-  "message": "Extension In Due Date Of Installment Fee Voucher For The Month Of December, 2020\nPublished On:  Thursday, November 26, 2020 \n\nKeeping in view financial difficulties, the University has decided to give relaxation to students by extending due date of December’2020 installment voucher which has been extended till December 21, 2020. \n\nThis will applicable on those students who have made 5 installments of Fall'2020 semester dues (2 installments were due on December 4, 2020).\n\nStudents having 3 installments of Semester Dues for Fall'2020 will pay the dues as per given schedule.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4363"
- },
- {
-  "id": 61,
-  "date": "2020-11-27T09:33:36+00:00",
-  "message": "CS702 - Advanced Algorithms Analysis and Design\nAssignment 1\n\nDue date is 3rd  December 2020\nTotal Marks: 50"
- },
- {
-  "id": 62,
-  "date": "2020-11-27T09:33:46+00:00",
-  "message": ""
- },
- {
-  "id": 63,
-  "date": "2020-11-27T09:33:54+00:00",
-  "message": ""
- },
- {
-  "id": 64,
-  "date": "2020-11-28T00:40:46+00:00",
-  "message": "Federal Minister for IT visited Virtual University\nPublished On:  Friday, November 27, 2020 \n\nFederal Minister for Information Technology (IT) & Telecom, Syed Ameen Ul Haq paid a visit to Virtual University of Pakistan, Kala Shah Kaku Campus\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4352"
- },
- {
-  "id": 65,
-  "date": "2020-11-28T00:41:29+00:00",
-  "message": "Extension In Due Date Of October'2020 Vouchers\nPublished On:  Friday, November 27, 2020 \n\nDue to technical issues arising in LMS services, October'2020 fee vouchers which had due date of November 27, 2020 has been further extended till December 10, 2020.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4364"
- },
- {
-  "id": 66,
-  "date": "2020-11-30T11:57:12+00:00",
-  "message": "CS701 - Theory of Computation \nAssignment 1\n\nDue date of assignment no 1 has been extended. Now you can submit the assignment till December 03, 2020.\n\nAlso, VU gives an extension of 24 hours, after every assignment's deadline for emergencies.\nThis extension is granted for assignments only. Quizes, GDB and MidTerm and FinalExams have no such provision."
- },
- {
-  "id": 67,
-  "date": "2020-11-30T14:29:22+00:00",
-  "message": "CS706 - Software Quality Assurance\nAcademic Research Paper\nTotal Marks: 100\nDue date: 2021-02-01"
- },
- {
-  "id": 68,
-  "date": "2020-11-30T14:29:32+00:00",
-  "message": ""
- },
- {
-  "id": 69,
-  "date": "2020-12-01T05:41:01+00:00",
-  "message": "CS706 - Software Quality Assurance\nAssignment 2\nTotal Marks: 50\nDue date: 2020-12-05"
- },
- {
-  "id": 70,
-  "date": "2020-12-01T05:41:47+00:00",
-  "message": ""
- },
- {
-  "id": 71,
-  "date": "2020-12-01T05:42:02+00:00",
-  "message": ""
- },
- {
-  "id": 72,
-  "date": "2020-12-02T19:59:36+00:00",
-  "message": "Officers from Press Information Department visited VU\nPublished On:  Wednesday, December 2, 2020\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4366"
- },
- {
-  "id": 73,
-  "date": "2020-12-02T20:01:09+00:00",
-  "message": "Mid Term Quiz instead of Mid Term Examinations\nPublished On:  Wednesday, December 2, 2020 \n\nDue to the prevailing COVID - 19 Pandemic, the Virtual University of Pakistan has decided that an online “Mid Term Quiz” will be conducted in lieu of Mid Term Examinations for the Fall 2020 semester.\n\nPlease note the followings:\n\n1. The date sheet schedule for “Mid Term Quiz” will be published after December 16, 2020.\n2. “Mid Term Quiz” will be conducted between December 26, 2020, to January 10, 2021.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4367"
- },
- {
-  "id": 74,
-  "date": "2020-12-05T13:07:14+00:00",
-  "message": "Extension In Due Date Of Fee Vouchers\nPublished On:  Saturday, December 5, 2020\n\nDue to Connectivity issues, students are informed that due date of fee vouchers which were due on December 04, 2020 or December 05, 2020 has been extended till December 07, 2020.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4368"
- },
- {
-  "id": 75,
-  "date": "2020-12-06T08:53:44+00:00",
-  "message": "On issues and bugs in the new version of LMS\nPublished On:  Sunday, December 6, 2020 \n\nRecently, Virtual University of Pakistan launched a new version of LMS with a new user interface and intuitive features. However, some functionality and features have been presented differently for ease of use and student activity tracking. Like any new version of a software some features are liked by users and others take time getting used to. The ICT teams are actively looking into any complaints and evaluating feedback in order to make it even better and more functional.\n\nAt the same time, unfortunately, some miscreants started generating severe BruteForce and DDoS cyber-attacks on LMS to make it inaccessible for obvious reasons. The ICT teams are continuously taking measures to mitigate these attacks on our websites and will not rest till the issue is resolved. We regret the inconvenience caused and appreciate your patience.\n\nThe University authorities have identified these sources and gathered the requisite information, which is now being sent to FIA Cyber Crimes wing for further action against these culprits.\n\nFurthermore, to compensate students with their graded activities the university extended the deadlines for different graded activities as deemed appropriate, so that students could make their submissions.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4369"
- },
- {
-  "id": 76,
-  "date": "2020-12-06T09:16:26+00:00",
-  "message": ""
- },
- {
-  "id": 77,
-  "date": "2020-12-07T08:43:04+00:00",
-  "message": "VU Cisco Network Academy is starting a new batch\n\nVU Cisco Network Academy is starting a new batch of the following courses.\n\n1. Network Essentials\n2. Introduction to Internet of Things (IoT)\n\nThese are basic courses, but it will open the doors to several highly valuable certifications. This is just the first step to a whole new dimension of IT related courses.\n\nSo, don’t miss the opportunity and get yourself enrolled in the courses and get an internationally recognized certificate.\n\nPlease visit https://www.vu.edu.pk/netacad/ for registration.\n\nRegistration opening date is 3 December, 2020\nRegistration closing date is 8 December, 2020"
- },
- {
-  "id": 78,
-  "date": "2020-12-09T07:15:53+00:00",
-  "message": "On December 3, 2020, VU clarified that \nin place of Mid Term Exams, it will either conduct a Mid Term Quiz or will issue a Special Assignment."
- },
- {
-  "id": 79,
-  "date": "2020-12-09T18:19:22+00:00",
-  "message": "Postgraduate Students : Submit your Migration Certificate\n\nAll students (Except VU graduates) are required to submit their Migration Certificate (original) from the last Pakistani institute/university attended to the office of the Registrar within 6 weeks of issuance of their admission offer letter. \nSubmit the same on or before January 11, 2021\n\nPlease note the following:\n\n1. Photocopy/color copy/scanned copy of Migration Certificate is unacceptable.\n2. (a) Campus based students may submit the said certificate to their respective campus and obtain receipt.\n2. (b) Home based/overseas students may send directly to VU Head Office address.\n3. VU ID must be clearly mentioned on top right corner of the migration certificate."
- },
- {
-  "id": 80,
-  "date": "2020-12-14T11:05:24+00:00",
-  "message": "Former Chairman of Virtual University Board of Governors passed away\nPublished On:  Monday, December 14, 2020\nاِنَّا لِلّٰہِ وَاِنَّآ اِلَیْہِ رَاجِعُوْنَ\n\nMr. Maroof Afzal passed away due to Covid-19 on Thursday, December 10, 2020\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4370"
- },
- {
-  "id": 81,
-  "date": "2020-12-15T19:02:33+00:00",
-  "message": "CS701 - Theory of Computation\nAssignment 2\nDue Date: Dec 21, 2020\nMarks: 50"
- },
- {
-  "id": 82,
-  "date": "2020-12-15T19:02:47+00:00",
-  "message": ""
- },
- {
-  "id": 83,
-  "date": "2020-12-16T07:14:03+00:00",
-  "message": "CS702 - Advanced Algorithms Analysis and Design\nAssignment 2\nDue Date: Dec 21, 2020\nMarks: 50"
- },
- {
-  "id": 85,
-  "date": "2020-12-16T07:14:28+00:00",
-  "message": ""
- },
- {
-  "id": 86,
-  "date": "2020-12-16T07:14:39+00:00",
-  "message": ""
- },
- {
-  "id": 87,
-  "date": "2020-12-16T18:50:43+00:00",
-  "message": "Endowment Fund Voucher, Fall - 2020\nPublished On:  Wednesday, December 16, 2020\n\nStudents are informed that the University has issued Endowment Fund voucher to newly admitted students of Fall, 2020 semester, amounting to Rs. 1,000/- for local students and $10 for overseas students with due date January 20, 2021.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4371"
- },
- {
-  "id": 88,
-  "date": "2020-12-17T14:25:57+00:00",
-  "message": "CS712: Distributed DBMS\nAssignment 3\nDue Date: Dec 21, 2020\nMarks: 50",
-  "edit_date": "2020-12-17T14:26:31+00:00"
- },
- {
-  "id": 89,
-  "date": "2020-12-17T14:26:07+00:00",
-  "message": ""
- },
- {
-  "id": 90,
-  "date": "2020-12-17T14:26:17+00:00",
-  "message": ""
- },
- {
-  "id": 91,
-  "date": "2020-12-17T16:04:06+00:00",
-  "message": "CS706 - Software Quality Assurance\nAssignment 3\nDue Date: 2020-12-22\nMarks: 50"
- },
- {
-  "id": 92,
-  "date": "2020-12-17T16:04:18+00:00",
-  "message": ""
- },
- {
-  "id": 93,
-  "date": "2020-12-17T16:04:27+00:00",
-  "message": ""
- },
- {
-  "id": 94,
-  "date": "2020-12-17T18:37:01+00:00",
-  "message": "CS706 has allowed\"two days\" extension."
- },
- {
-  "id": 96,
-  "date": "2020-12-21T13:20:21+00:00",
-  "message": "CS701 – Mid Terms\nMarks: 50\nDate: 2020-12-28\nDue Date: 2020-12-28 + 1 extended day\n\nYou shall not request for extension. Don't expect any extension or reschedule.\n\nQuestion Paper\nhttps://t.me/vuopak/107\nhttps://t.me/vuopak/108\n\nProposal to solve Q4\nhttps://t.me/vupkmscs2020/5288",
-  "edit_date": "2020-12-29T19:52:39+00:00"
- },
- {
-  "id": 97,
-  "date": "2020-12-21T14:38:09+00:00",
-  "message": "CS702 - Mid Terms\nMarks: 50\nDate: 2020-12-31\n\nQuestion Paper\nhttps://t.me/vuopak/110\nhttps://t.me/vuopak/111\n\nAnswers\nQ1\nhttps://t.me/vupkmscs2020/5621\nhttps://t.me/vupkmscs2020/5622\nhttps://t.me/vupkmscs2020/5643\nhttps://t.me/vupkmscs2020/5664\nhttps://t.me/vupkmscs2020/5691\nhttps://t.me/vupkmscs2020/5700\nhttps://t.me/vupkmscs2020/5785\n\nQ2\nhttps://t.me/vupkmscs2020/5902\nhttps://t.me/vupkmscs2020/5905\nhttps://t.me/vupkmscs2020/5920\nhttps://t.me/vupkmscs2020/5945\n\n\nQ3\n\nhttps://t.me/vupkmscs2020/5677\nhttps://t.me/vupkmscs2020/5808\nhttps://t.me/vupkmscs2020/5833\nhttps://t.me/vupkmscs2020/5839\nhttps://t.me/vupkmscs2020/5843\nhttps://t.me/vupkmscs2020/5872\n\nQ4\nhttps://t.me/vupkmscs2020/5505\nhttps://t.me/vupkmscs2020/5700\nhttps://t.me/vupkmscs2020/5741\nhttps://t.me/vupkmscs2020/5789\nhttps://t.me/vupkmscs2020/5889",
-  "edit_date": "2021-01-01T16:38:25+00:00"
- },
- {
-  "id": 98,
-  "date": "2020-12-22T06:24:38+00:00",
-  "message": "CS706 - Mid Terms\nMarks: 50\nDate: 2020-01-04\n\nQuestion Paper\n\nhttps://t.me/vuopak/115\nhttps://t.me/vuopak/116\n\nAnswer\n\nhttps://t.me/vupkmscs2020/6381\nhttps://t.me/vupkmscs2020/6436\nhttps://t.me/vupkmscs2020/6453\nhttps://t.me/vupkmscs2020/6457\nhttps://t.me/vupkmscs2020/6485",
-  "edit_date": "2021-01-06T17:49:28+00:00"
- },
- {
-  "id": 99,
-  "date": "2020-12-22T16:19:51+00:00",
-  "message": "Blocking of VU-LMS Accounts\nPublished On:  Tuesday, December 22, 2020\n\nIt is informed that LMS Accounts of all such students who have not paid their outstanding dues shall be blocked on December 24, 2020. Students with blocked Accounts will not be able to appear in Exams and carry out academic activities. It is therefore advised to clear all outstanding dues at the earliest, in order to avoid any inconvenience.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4374"
- },
- {
-  "id": 100,
-  "date": "2020-12-22T16:21:18+00:00",
-  "message": "Fall 2020: Mid Term Quiz Schedule \nPublished On:  Tuesday, December 22, 2020\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4373",
-  "edit_date": "2020-12-22T16:22:37+00:00"
- },
- {
-  "id": 101,
-  "date": "2020-12-23T14:40:17+00:00",
-  "message": "List of Merit Based Scholarship Fall, 2020 – Newly Admitted Students\nPublished On:  Wednesday, December 23, 2020\n\n\nThe Management Committee for Scholarships has finalized the students for Merit Scholarship (Newly Admitted Students) for Fall 2020. \n\nOnly those students are enlisted for scholarship who have obtained highest percentage marks in his/her previous degree. The students who have scored highest percentage marks and his/her name is mentioned in the above list and obtained percentage marks ranged as given in column (B) will be eligible for merit scholarship as mentioned in column (C).\n\nErrors and Omissions Excepted, within two weeks after publication of merit scholarship list. (Queries to be sent; if any at qamar.zaman@vu.edu.pk)\nThe Students those having percentage marks’ range but not mentioned in list are not eligible for scholarship because only top students those having highest marks are considered for scholarship.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4375"
- },
- {
-  "id": 102,
-  "date": "2020-12-24T08:18:42+00:00",
-  "message": "THE HIGHER EDUCATION COMMISSION \nPOLICY ON PHD DEGREE PROGRAMS\n\nEffective January 1, 2021"
- },
- {
-  "id": 103,
-  "date": "2020-12-25T10:27:52+00:00",
-  "message": "Official solution to CS701 Assignment 1"
- },
- {
-  "id": 104,
-  "date": "2020-12-25T17:11:50+00:00",
-  "message": "Official solution to CS701 - Assignment 2"
- }
-]
+{
+ "name": "Virtual University of Pakistan",
+ "type": "public_channel",
+ "id": 9999969886,
+ "messages": [
+  {
+   "id": 1,
+   "date": "2020-10-30T06:36:47+00:00",
+   "title": "Virtual University of Pakistan"
+  },
+  {
+   "id": 2,
+   "date": "2020-10-30T06:39:19+00:00",
+   "text": ""
+  },
+  {
+   "id": 3,
+   "date": "2020-10-30T06:39:47+00:00",
+   "text": "Issuance of First Voucher to Continuing Students (Fall, 2020)\n\nPublished On:  Oct 29, 2020\n\nStudents are informed that the University has issued first voucher (Semester Enrollment fee + One Course fee) for Fall, 2020 semester to continuing students, who have made course selection from October 22, 2020 to October 29, 2020. \n\nYou are directed to deposit payable voucher as per given schedule."
+  },
+  {
+   "id": 4,
+   "date": "2020-10-30T06:52:18+00:00"
+  },
+  {
+   "id": 5,
+   "date": "2020-10-30T06:55:50+00:00",
+   "text": "MS Computer Science (Fall 2020 Semester)\n\nMerit List of Candidates Eligible for Interview Published\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4348"
+  },
+  {
+   "id": 6,
+   "date": "2020-10-30T07:20:26+00:00",
+   "text": ""
+  },
+  {
+   "id": 7,
+   "date": "2020-10-30T07:21:06+00:00",
+   "text": ""
+  },
+  {
+   "id": 8,
+   "date": "2020-11-05T13:39:51+00:00",
+   "text": "Course selection is not working for MSCS students.\n\nOn 2020-11-05, MS CS department has reported that this error has been referred to the IT department and will get fixed soon."
+  },
+  {
+   "id": 9,
+   "date": "2020-11-09T09:24:44+00:00",
+   "text": "Extension in due date of Need based Scholarship for Fall, 2020 \nPublished On:  Friday, November 6, 2020\n\nAll the students are informed that last date to apply for need based scholarship (Fall'2020 semester) has been extended till Thursday, November 12, 2020.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4350"
+  },
+  {
+   "id": 10,
+   "date": "2020-11-09T09:28:45+00:00",
+   "text": "On 2020-11-06, MSCS department sent out this email to all MSCS students from mscs_courseselection@vu.edu.pk"
+  }
+ ]
+}

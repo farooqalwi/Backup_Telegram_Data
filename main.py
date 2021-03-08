@@ -10,7 +10,7 @@ client.start()
 json_list = list()
 
 
-for message in client.iter_messages('vuopak', limit=100, reverse=True):
+for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # print(dir(message))
     # print(message.date)
     # print(message.id)
@@ -23,23 +23,35 @@ for message in client.iter_messages('vuopak', limit=100, reverse=True):
     # convert string to dictionary
     str_dict = json.loads(json_string)
     # empty dict to store json data in a dict after filteration
-    json_dict = dict()
+    json_nestedDict = dict()
 
     for key, value in str_dict.items():
-        if key == "id" or key == "date" or (key == "edit_date" and value != None ) or key == "photo" or key == "file" or key == "thumbnail" or key == "message":
-            json_dict[key] = value
-    
-
+        if key == "id" or key == "date" or (key == "edit_date" and value != None ):
+            json_nestedDict[key] = value
+        
+        # we are saving it by naming it 'text' because it is available in manual downloaded json by this name
+        if key == "message":
+            json_nestedDict["text"] = value
+        
+        
+        if key == "action":
+            for subKey, subValue in value.items():
+                if subKey == "title":
+                    json_nestedDict[subKey] = subValue
+                    
 
     # insert dict into list
-    json_list.append(json_dict)
+    json_list.append(json_nestedDict)
 
     # client.download_media(message)
 
- 
 
-print(type(json_list))
-print(json_list)
+json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
+
+json_dict["messages"] = json_list
+
+print(json_dict)
 
 with open('result.json', 'w', encoding='utf-8') as file:
-    json.dump(json_list, file, ensure_ascii=False, indent=1)
+    json.dump(json_dict, file, ensure_ascii=False, indent=1)
+
