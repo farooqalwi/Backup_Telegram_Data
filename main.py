@@ -16,7 +16,8 @@ for message in client.iter_messages('vuopak', limit=30, reverse=True):
     # print(message.id)
     # print(message.text)
     # print(message.raw_text)
-    print(message.to_json())
+    # print(message.to_json())
+    # print(message.get_entities_text())
 
 
     json_string = message.to_json()
@@ -26,12 +27,21 @@ for message in client.iter_messages('vuopak', limit=30, reverse=True):
     json_nestedDict = dict()
 
     for key, value in str_dict.items():
-        if key == "id" or key == "date" or (key == "edit_date" and value != None ):
+        # for id and date
+        if key == "id" or key == "date":
             json_nestedDict[key] = value
         
-        # we are saving it by naming it 'text' because it is available in manual downloaded json by this name
+        # for edited date
+        if key == "edit_date" and value != None:
+            json_nestedDict["edited"] = value
+        
+        # for text
         if key == "message":
-            json_nestedDict["text"] = value
+            text_list = []
+            for text_type, inner_text in message.get_entities_text():
+                text_dict = {text_type : inner_text}
+                text_list.append(text_dict)
+            json_nestedDict["text"] = text_list
         
         
         if key == "action":
@@ -49,6 +59,7 @@ for message in client.iter_messages('vuopak', limit=30, reverse=True):
 json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
 # putting list to a dict in order to obtain result.json file
 json_dict["messages"] = json_list
+print(json_dict)
 
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
