@@ -10,16 +10,17 @@ client.start()
 json_list = list()
 
 
-for message in client.iter_messages('vuopak', limit=30, reverse=True):
+for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # print(dir(message))
+    print(message.id)
     # print(message.date)
-    # print(message.id)
     # print(message.text)
     # print(message.raw_text)
     # print(message.to_json())
     # print(message.get_entities_text())
+    print(client.download_media(message))
 
-
+'''
     json_string = message.to_json()
     # convert string to dictionary
     str_dict = json.loads(json_string)
@@ -36,12 +37,12 @@ for message in client.iter_messages('vuopak', limit=30, reverse=True):
             json_nestedDict["edited"] = value
         
         # for text
-        if key == "message":
-            text_list = []
-            for text_type, inner_text in message.get_entities_text():
-                text_dict = {text_type : inner_text}
-                text_list.append(text_dict)
-            json_nestedDict["text"] = text_list
+        # if key == "message":
+        #     text_list = []
+        #     for text_type, inner_text in message.get_entities_text():
+        #         text_dict = {text_type : inner_text}
+        #         text_list.append(text_dict)
+        #     json_nestedDict["text"] = text_list
         
         
         if key == "action":
@@ -59,8 +60,8 @@ for message in client.iter_messages('vuopak', limit=30, reverse=True):
 json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
 # putting list to a dict in order to obtain result.json file
 json_dict["messages"] = json_list
-print(json_dict)
 
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
+'''
