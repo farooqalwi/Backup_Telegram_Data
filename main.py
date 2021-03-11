@@ -11,9 +11,9 @@ client.start()
 json_list = list()
 
 
-for message in client.iter_messages('vuopak', limit=20, reverse=True):
+for message in client.iter_messages('vuopak', limit=5, reverse=True):
     # print(dir(message))
-    # print(message.id)
+    print(message.id)
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
@@ -41,11 +41,13 @@ for message in client.iter_messages('vuopak', limit=20, reverse=True):
         if key == "message":
             text_list = []
             for text_type, inner_text in message.get_entities_text():
-                text_dict = {text_type : inner_text}
-                text_list.append(text_dict)
-            json_nestedDict["text"] = text_list
+                print(text_type)
+                print(inner_text)
+                # text_dict = {text_type : inner_text}
+                # text_list.append(text_dict)
+            # json_nestedDict["text"] = text_list
         
-        
+'''        
         if key == "action":
             for subKey, subValue in value.items():
                 if subKey == "title":
@@ -54,8 +56,8 @@ for message in client.iter_messages('vuopak', limit=20, reverse=True):
 
     # for photos            
     # if client.download_media(message) != None:
-    #     fullPath = os.path.join('photos', client.download_media(message))
-    #     json_nestedDict['photo'] = fullPath
+    #     path = os.path.join('photos', client.download_media(message))
+    #     json_nestedDict['photo'] = path
         
 
     # insert dict into list
@@ -71,3 +73,4 @@ json_dict["messages"] = json_list
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
+'''
