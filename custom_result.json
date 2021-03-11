@@ -51,6 +51,57 @@
    "id": 10,
    "date": "2020-11-09T09:28:45+00:00",
    "text": "On 2020-11-06, MSCS department sent out this email to all MSCS students from mscs_courseselection@vu.edu.pk"
+  },
+  {
+   "id": 11,
+   "date": "2020-11-09T11:29:14+00:00",
+   "text": "To find email addresses of other VU students, log in to your VU Gmail account and then visit this link:\n\nhttps://contacts.google.com/directory\n\nIt will take some time to load. Eventually, it will display all the email addresses that are present in the VU organization.\n\nThe administrators have kept some addresses hidden probably for privacy and to fight spam.\n\nYou can look up other students from your batch, using your VU ID.\n\nKindly do not use abuse this system. So far, VU has not provided any way for students to communicate with each other. If you misuse it, then administrators can hide the directory, and we will not be able to discover our fellow batch members."
+  },
+  {
+   "id": 12,
+   "date": "2020-11-09T11:58:44+00:00",
+   "text": "Issuance of 1st Voucher to Continuing Students (Fall-2020 Semester)\nPublished On:  Monday, November 9, 2020 \n\nStudents are informed that the University has issued first voucher (Semester Enrollment fee + One Course fee) for Fall, 2020 semester to continuing students, who have made course selection from October 29, 2020 to November 09, 2020. Furthermore, the University has already issued said fee voucher to those who made course selection prior to October 29, 2020.\n\nYou are directed to deposit payable voucher as per given schedule.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4351"
+  },
+  {
+   "id": 13,
+   "date": "2020-11-09T12:04:16+00:00",
+   "text": "VU has published the date of mid term exams.\n\n2020-12-26 (December 26)\n\nSource: https://www.vu.edu.pk/StudentServices/AcademicCalendar.aspx"
+  },
+  {
+   "id": 14,
+   "date": "2020-11-09T12:04:23+00:00"
+  },
+  {
+   "id": 15,
+   "date": "2020-11-09T13:58:38+00:00",
+   "text": "CS701 Theory of Computation\nRequired subject for MSCS students\n\nIntroduction to the theory of computation\nby Michael Sipser\n3rd Edition"
+  },
+  {
+   "id": 16,
+   "date": "2020-11-09T14:02:23+00:00",
+   "text": "CS701 Theory of Computation\nIt's a required subject for MSCS students.\n\nIntroduction to the theory of computation\nby Michael Sipser\n2nd Edition"
+  },
+  {
+   "id": 17,
+   "date": "2020-11-09T14:27:57+00:00",
+   "text": "CS701 Theory of Computation\nIt's a required subject for MSCS students.\n\nAll lecture slides have been merged into one PDF.\n\nSome slides are incorrectly labelled and repeated in the source material.\nI have tried to correct the issues as much as possible.",
+   "edited": "2020-11-09T14:28:55+00:00"
+  },
+  {
+   "id": 18,
+   "date": "2020-11-10T07:41:12+00:00",
+   "text": "CS702 - Advanced Algorithms Analysis and Design\nRequired subject for MSCS\n\nI have converted all the PPT slides to PDF and then merged them into one."
+  },
+  {
+   "id": 19,
+   "date": "2020-11-10T09:26:52+00:00",
+   "text": "Federal Minister for IT om, Syed Ameen Ul Haq visited Virtual University\nPublished On:  Tuesday, November 10, 2020 \n\n> He also visited Virtual University, M.A Jinnah Campus (Head Office) and inaugurated the newly launched “Learning Management System” for VU students.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4352"
+  },
+  {
+   "id": 20,
+   "date": "2020-11-10T10:05:08+00:00",
+   "text": "⚠️ Attention MSCS 2020 students ⚠️\nThe bug in VULMS course selection has been fixed.\n\nPlease make your course selection ASAP.",
+   "edited": "2020-11-10T10:06:26+00:00"
   }
  ]
 }

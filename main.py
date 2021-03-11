@@ -11,7 +11,7 @@ client.start()
 json_list = list()
 
 
-for message in client.iter_messages('vuopak', limit=10, reverse=True):
+for message in client.iter_messages('vuopak', limit=20, reverse=True):
     # print(dir(message))
     # print(message.id)
     # print(message.date)
@@ -38,12 +38,12 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
             json_nestedDict["edited"] = value
         
         # for text
-        # if key == "message":
-        #     # text_list = []
-        #     # for text_type, inner_text in message.get_entities_text():
-        #     #     text_dict = {text_type : inner_text}
-        #     #     text_list.append(text_dict)
-        #     json_nestedDict["text"] = value
+        if key == "message":
+            # text_list = []
+            # for text_type, inner_text in message.get_entities_text():
+            #     text_dict = {text_type : inner_text}
+            #     text_list.append(text_dict)
+            json_nestedDict["text"] = value
         
         
         if key == "action":
