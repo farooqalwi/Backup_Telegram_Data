@@ -13,11 +13,11 @@ json_list = list()
 
 for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # print(dir(message))
-    print(message.id)
+    # print(message.id)
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
-    print(message.to_json())
+    # print(message.to_json())
     # print(message.get_entities_text())
     # print(client.download_media(message))
 
@@ -39,11 +39,11 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
         
         # for text
         # if key == "message":
-        #     text_list = []
-        #     for text_type, inner_text in message.get_entities_text():
-        #         text_dict = {text_type : inner_text}
-        #         text_list.append(text_dict)
-        #     json_nestedDict["text"] = text_list
+        #     # text_list = []
+        #     # for text_type, inner_text in message.get_entities_text():
+        #     #     text_dict = {text_type : inner_text}
+        #     #     text_list.append(text_dict)
+        #     json_nestedDict["text"] = value
         
         
         if key == "action":
@@ -53,9 +53,9 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
 
 
     # for photos            
-    if client.download_media(message) != None:
-        fullPath = os.path.join('photos', client.download_media(message))
-        json_nestedDict['photo'] = fullPath
+    # if client.download_media(message) != None:
+    #     fullPath = os.path.join('photos', client.download_media(message))
+    #     json_nestedDict['photo'] = fullPath
         
 
     # insert dict into list

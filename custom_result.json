@@ -11,11 +11,12 @@
   {
    "id": 2,
    "date": "2020-10-30T06:39:19+00:00",
-   "photo": "photos\\photo_2020-10-30_06-39-19 (1).jpg"
+   "text": ""
   },
   {
    "id": 3,
-   "date": "2020-10-30T06:39:47+00:00"
+   "date": "2020-10-30T06:39:47+00:00",
+   "text": "Issuance of First Voucher to Continuing Students (Fall, 2020)\n\nPublished On:  Oct 29, 2020\n\nStudents are informed that the University has issued first voucher (Semester Enrollment fee + One Course fee) for Fall, 2020 semester to continuing students, who have made course selection from October 22, 2020 to October 29, 2020. \n\nYou are directed to deposit payable voucher as per given schedule."
   },
   {
    "id": 4,
@@ -23,31 +24,33 @@
   },
   {
    "id": 5,
-   "date": "2020-10-30T06:55:50+00:00"
+   "date": "2020-10-30T06:55:50+00:00",
+   "text": "MS Computer Science (Fall 2020 Semester)\n\nMerit List of Candidates Eligible for Interview Published\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4348"
   },
   {
    "id": 6,
    "date": "2020-10-30T07:20:26+00:00",
-   "photo": "photos\\photo_2020-10-30_07-20-26 (1).jpg"
+   "text": ""
   },
   {
    "id": 7,
    "date": "2020-10-30T07:21:06+00:00",
-   "photo": "photos\\2020 Fall Semester MSCS Merit List (1).png"
+   "text": ""
   },
   {
    "id": 8,
    "date": "2020-11-05T13:39:51+00:00",
-   "photo": "photos\\photo_2020-11-05_13-39-51 (1).jpg"
+   "text": "Course selection is not working for MSCS students.\n\nOn 2020-11-05, MS CS department has reported that this error has been referred to the IT department and will get fixed soon."
   },
   {
    "id": 9,
-   "date": "2020-11-09T09:24:44+00:00"
+   "date": "2020-11-09T09:24:44+00:00",
+   "text": "Extension in due date of Need based Scholarship for Fall, 2020 \nPublished On:  Friday, November 6, 2020\n\nAll the students are informed that last date to apply for need based scholarship (Fall'2020 semester) has been extended till Thursday, November 12, 2020.\n\nhttps://www.vu.edu.pk/NewsDetails.aspx?type=&NewsId=4350"
   },
   {
    "id": 10,
    "date": "2020-11-09T09:28:45+00:00",
-   "photo": "photos\\photo_2020-11-09_09-28-45 (1).jpg"
+   "text": "On 2020-11-06, MSCS department sent out this email to all MSCS students from mscs_courseselection@vu.edu.pk"
   }
  ]
 }
