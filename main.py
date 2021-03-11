@@ -2,6 +2,7 @@
 from TG_id_hash import api_id, api_hash
 from telethon.sync import TelegramClient
 import json
+import os
 
 client = TelegramClient('test_session', api_id, api_hash)
 client.start()
@@ -16,11 +17,11 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
-    # print(message.to_json())
+    print(message.to_json())
     # print(message.get_entities_text())
-    print(client.download_media(message))
+    # print(client.download_media(message))
 
-'''
+    
     json_string = message.to_json()
     # convert string to dictionary
     str_dict = json.loads(json_string)
@@ -49,7 +50,13 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
             for subKey, subValue in value.items():
                 if subKey == "title":
                     json_nestedDict[subKey] = subValue
-                    
+
+
+    # for photos            
+    if client.download_media(message) != None:
+        fullPath = os.path.join('photos', client.download_media(message))
+        json_nestedDict['photo'] = fullPath
+        
 
     # insert dict into list
     json_list.append(json_nestedDict)
@@ -64,4 +71,3 @@ json_dict["messages"] = json_list
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
-'''
