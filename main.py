@@ -39,11 +39,11 @@ for message in client.iter_messages('vuopak', limit=20, reverse=True):
         
         # for text
         if key == "message":
-            # text_list = []
-            # for text_type, inner_text in message.get_entities_text():
-            #     text_dict = {text_type : inner_text}
-            #     text_list.append(text_dict)
-            json_nestedDict["text"] = value
+            text_list = []
+            for text_type, inner_text in message.get_entities_text():
+                text_dict = {text_type : inner_text}
+                text_list.append(text_dict)
+            json_nestedDict["text"] = text_list
         
         
         if key == "action":
