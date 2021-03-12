@@ -3,6 +3,7 @@ from TG_id_hash import api_id, api_hash
 from telethon.sync import TelegramClient
 import json
 import os
+import shutil
 
 client = TelegramClient('test_session', api_id, api_hash)
 client.start()
@@ -10,6 +11,10 @@ client.start()
 # to store json dict data in a list
 json_list = list()
 
+# directories for meddia files
+os.makedirs("photos", exist_ok = True)
+
+root_dir = "D:\Sir-Talha-Mansoor\Practice-Files\Backup_Telegram_Data"
 
 for message in client.iter_messages('vuopak', limit=5, reverse=True):
     # print(dir(message))
@@ -37,29 +42,46 @@ for message in client.iter_messages('vuopak', limit=5, reverse=True):
         if key == "edit_date" and value != None:
             json_nestedDict["edited"] = value
         
+        '''
         # for text
         if key == "message":
             text_list = []
             for text_type, inner_text in message.get_entities_text():
                 print(text_type)
+                print(type(text_type))
                 print(inner_text)
-                # text_dict = {text_type : inner_text}
-                # text_list.append(text_dict)
-            # json_nestedDict["text"] = text_list
+                print(type(inner_text))
+                text_dict = {text_type : inner_text}
+                text_list.append(text_dict)
+            json_nestedDict["text"] = text_list
+        '''
         
-'''        
+        # for title
         if key == "action":
             for subKey, subValue in value.items():
                 if subKey == "title":
                     json_nestedDict[subKey] = subValue
 
 
-    # for photos            
-    # if client.download_media(message) != None:
-    #     path = os.path.join('photos', client.download_media(message))
-    #     json_nestedDict['photo'] = path
-        
+    # for photos
+    # it generates photo and assign photo name in a variable
+    photo_name = client.download_media(message)
+    if photo_name != None:
+        photo_path = os.path.join(root_dir, photo_name)
+        Photos_DirPath = os.path.join(root_dir, 'photo')
 
+        # to move photo to photos_dir
+        if os.path.isfile(photo_name):
+            shutil.move(photo_path, Photos_DirPath)
+
+        # check = os.path.isfile(path)
+        # print("checking: ", check)
+
+        # for json
+        path = os.path.join('photos', photo_name)
+        json_nestedDict['photo'] = path
+
+        
     # insert dict into list
     json_list.append(json_nestedDict)
 
@@ -73,4 +95,3 @@ json_dict["messages"] = json_list
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
-'''
