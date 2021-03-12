@@ -15,9 +15,9 @@ json_list = list()
 os.makedirs("photos", exist_ok = True)
 
 
-for message in client.iter_messages('vuopak', limit=10, reverse=True):
+for message in client.iter_messages('vuopak', limit=20, reverse=True):
     # print(dir(message))
-    # print(message.id)
+    print(message.id)
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
@@ -82,9 +82,7 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # insert dict into list
     json_list.append(json_nestedDict)
 
-    # client.download_media(message)
-
-
+    
 json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
 # putting list to a dict in order to obtain result.json file
 json_dict["messages"] = json_list
