@@ -14,7 +14,6 @@ json_list = list()
 # directories for meddia files
 os.makedirs("photos", exist_ok = True)
 
-root_dir = "D:\Sir-Talha-Mansoor\Practice-Files\Backup_Telegram_Data"
 
 for message in client.iter_messages('vuopak', limit=5, reverse=True):
     # print(dir(message))
@@ -67,21 +66,18 @@ for message in client.iter_messages('vuopak', limit=5, reverse=True):
     # it generates photo and assign photo name in a variable
     photo_name = client.download_media(message)
     if photo_name != None:
-        photo_path = os.path.join(root_dir, photo_name)
-        Photos_DirPath = os.path.join(root_dir, 'photo')
+        path = os.path.join('photos', photo_name)
 
         # to move photo to photos_dir
-        if os.path.isfile(photo_name):
-            shutil.move(photo_path, Photos_DirPath)
+        isFileExit = os.path.isfile(path)
 
-        # check = os.path.isfile(path)
-        # print("checking: ", check)
+        if os.path.isfile(photo_name) and !(isFileExit):
+            shutil.move(photo_name, 'photos')
 
-        # for json
-        path = os.path.join('photos', photo_name)
+        # to update json
         json_nestedDict['photo'] = path
-
         
+
     # insert dict into list
     json_list.append(json_nestedDict)
 
