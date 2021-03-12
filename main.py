@@ -15,13 +15,13 @@ json_list = list()
 os.makedirs("photos", exist_ok = True)
 
 
-for message in client.iter_messages('vuopak', limit=5, reverse=True):
+for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # print(dir(message))
-    print(message.id)
+    # print(message.id)
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
-    # print(message.to_json())
+    print(message.to_json())
     # print(message.get_entities_text())
     # print(client.download_media(message))
 
@@ -67,12 +67,13 @@ for message in client.iter_messages('vuopak', limit=5, reverse=True):
     photo_name = client.download_media(message)
     if photo_name != None:
         path = os.path.join('photos', photo_name)
-
         # to move photo to photos_dir
-        isFileExit = os.path.isfile(path)
-
-        if os.path.isfile(photo_name) and !(isFileExit):
+        # if file exists then do not move it
+        # delete existed files
+        if not os.path.isfile(path):
             shutil.move(photo_name, 'photos')
+        else:
+            os.remove(photo_name)
 
         # to update json
         json_nestedDict['photo'] = path
