@@ -1,0 +1,105 @@
+"message id":"1
+None
+message id":"2
+photo id":"5825877095983724235
+photo date":"2020-10-30 06":"39":"18+00":"00
+photo dc_id":"4
+photo access_hash":"-8532662797456929588
+photo file_reference":"b""\\x02T\\x0bn^\\x00\\x00\\x00\\x02`N\\x17\\xc94\tU\\x1955Y+\\x7f\\xc5p_[\\xdd<\\xdd""photo from_reader":"<bound method Photo.from_reader of <class""telethon.tl.types.Photo"">>
+photo has_stickers":"False
+photo pretty_format":"<function TLObject.pretty_format at 0x00000287936FEA60>
+photo iserialize_bytesd":"<function TLObject.serialize_bytes at 0x00000287936FEAF0>
+photo serialize_datetime":"<function TLObject.serialize_datetime at 0x00000287936FEB80>
+photo sizes":[
+  <telethon.tl.types.PhotoStrippedSize object at 0x00000287944F28E0>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944F29D0>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944F2A90>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944F2B50>
+]"photo stringify":"<bound method TLObject.stringify of <telethon.tl.types.Photo object at 0x00000287944F2940>>
+photo video_sizes":"None
+photo to_dict":"<bound method Photo.to_dict of <telethon.tl.types.Photo object at 0x00000287944F2940>>
+photo to_json":"<bound method TLObject.to_json of <telethon.tl.types.Photo object at 0x00000287944F2940>>
+message id":"3
+None
+message id":"4
+photo id":"5827786337795814345
+photo date":"2020-10-30 06":"52":"18+00":"00
+photo dc_id":"4
+photo access_hash":"8127590557974571712
+photo file_reference":"b""\\x02T\\x0bn^\\x00\\x00\\x00\\x04`N\\x17\\xc9\\xe2|\\xd0\\x02\\xf0\\x1b\t^as\\xf5+\\\\x12\\xd0\\x93""photo from_reader":"<bound method Photo.from_reader of <class""telethon.tl.types.Photo"">>
+photo has_stickers":"False
+photo pretty_format":"<function TLObject.pretty_format at 0x00000287936FEA60>
+photo iserialize_bytesd":"<function TLObject.serialize_bytes at 0x00000287936FEAF0>
+photo serialize_datetime":"<function TLObject.serialize_datetime at 0x00000287936FEB80>
+photo sizes":[
+  <telethon.tl.types.PhotoSize object at 0x00000287944F22E0>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944F23A0>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944F2460>,
+  <telethon.tl.types.PhotoStrippedSize object at 0x00000287944F24F0>
+]"photo stringify":"<bound method TLObject.stringify of <telethon.tl.types.Photo object at 0x00000287944F2550>>
+photo video_sizes":"None
+photo to_dict":"<bound method Photo.to_dict of <telethon.tl.types.Photo object at 0x00000287944F2550>>
+photo to_json":"<bound method TLObject.to_json of <telethon.tl.types.Photo object at 0x00000287944F2550>>
+message id":"5
+None
+message id":"6
+photo id":"5828128895797409074
+photo date":"2020-10-30 07":"20":"25+00":"00
+photo dc_id":"4
+photo access_hash":"6729962274783922657
+photo file_reference":"b""\\x02T\\x0bn^\\x00\\x00\\x00\\x06`N\\x17\\xc9\\xca\\xc0\\x86\\xack\\x1bD\\x1e\\xb7\\xc8\\xff\\xab\\x06\\x9e\\xb3*""photo from_reader":"<bound method Photo.from_reader of <class""telethon.tl.types.Photo"">>
+photo has_stickers":"False
+photo pretty_format":"<function TLObject.pretty_format at 0x00000287936FEA60>
+photo iserialize_bytesd":"<function TLObject.serialize_bytes at 0x00000287936FEAF0>
+photo serialize_datetime":"<function TLObject.serialize_datetime at 0x00000287936FEB80>
+photo sizes":[
+  <telethon.tl.types.PhotoStrippedSize object at 0x00000287944EEA90>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944EEB20>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944EEBE0>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944EECA0>
+]"photo stringify":"<bound method TLObject.stringify of <telethon.tl.types.Photo object at 0x00000287944EEAF0>>
+photo video_sizes":"None
+photo to_dict":"<bound method Photo.to_dict of <telethon.tl.types.Photo object at 0x00000287944EEAF0>>
+photo to_json":"<bound method TLObject.to_json of <telethon.tl.types.Photo object at 0x00000287944EEAF0>>
+message id":"7
+None
+message id":"8
+photo id":"5846204686569420517
+photo date":"2020-11-05 13":"39":"51+00":"00
+photo dc_id":"4
+photo access_hash":"6065184175645219204
+photo file_reference":"b""\\x02T\\x0bn^\\x00\\x00\\x00\\x08`N\\x17\\xc98\\xa5!\\x94\\xe4\\xdc\\xd5G\\x98\\xd3\\x95\\x85\\xa7\\xf4\\x12\\xd9""photo from_reader":"<bound method Photo.from_reader of <class""telethon.tl.types.Photo"">>
+photo has_stickers":"False
+photo pretty_format":"<function TLObject.pretty_format at 0x00000287936FEA60>
+photo iserialize_bytesd":"<function TLObject.serialize_bytes at 0x00000287936FEAF0>
+photo serialize_datetime":"<function TLObject.serialize_datetime at 0x00000287936FEB80>
+photo sizes":[
+  <telethon.tl.types.PhotoStrippedSize object at 0x00000287944EE190>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944EE250>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944EE310>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944EE3D0>
+]"photo stringify":"<bound method TLObject.stringify of <telethon.tl.types.Photo object at 0x00000287944EE220>>
+photo video_sizes":"None
+photo to_dict":"<bound method Photo.to_dict of <telethon.tl.types.Photo object at 0x00000287944EE220>>
+photo to_json":"<bound method TLObject.to_json of <telethon.tl.types.Photo object at 0x00000287944EE220>>
+message id":"9
+None
+message id":"10
+photo id":"5857290074469807297
+photo date":"2020-11-09 09":"28":"45+00":"00
+photo dc_id":"4
+photo access_hash":"-1271333509771912364
+photo file_reference":"b""\\x02T\\x0bn^\\x00\\x00\\x00\n`N\\x17\\xc9uq\\x04D\\x139\\xf4\\x84\\xc3\\xf7\\x7f8S+u\\x8c""photo from_reader":"<bound method Photo.from_reader of <class""telethon.tl.types.Photo"">>
+photo has_stickers":"False
+photo pretty_format":"<function TLObject.pretty_format at 0x00000287936FEA60>
+photo iserialize_bytesd":"<function TLObject.serialize_bytes at 0x00000287936FEAF0>
+photo serialize_datetime":"<function TLObject.serialize_datetime at 0x00000287936FEB80>
+photo sizes":[
+  <telethon.tl.types.PhotoStrippedSize object at 0x00000287944D6B20>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944D6340>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944D61F0>,
+  <telethon.tl.types.PhotoSize object at 0x00000287944D6AF0>
+]"photo stringify":"<bound method TLObject.stringify of <telethon.tl.types.Photo object at 0x00000287944D62E0>>
+photo video_sizes":"None
+photo to_dict":"<bound method Photo.to_dict of <telethon.tl.types.Photo object at 0x00000287944D62E0>>
+photo to_json":<bound method TLObject.to_json of <telethon.tl.types.Photo object at 0x00000287944D62E0>>

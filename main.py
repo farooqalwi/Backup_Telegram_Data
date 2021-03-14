@@ -17,7 +17,7 @@ os.makedirs("photos", exist_ok = True)
 
 for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # print(dir(message))
-    print(message.id)
+    print("message id: ", message.id)
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
@@ -25,7 +25,25 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # print(message.get_entities_text())
     # print(client.download_media(message))
 
-    print(dir(message.photo))
+    if message.photo is not None:
+        print("photo id: ", message.photo.id)
+        print("photo date: ", message.photo.date)
+        print("photo dc_id: ", message.photo.dc_id)
+        print("photo access_hash: ", message.photo.access_hash)
+        print("photo file_reference: ", message.photo.file_reference)
+        print("photo from_reader: ", message.photo.from_reader)
+        print("photo has_stickers: ", message.photo.has_stickers)
+        print("photo pretty_format: ", message.photo.pretty_format)
+        print("photo iserialize_bytesd: ", message.photo.serialize_bytes)
+        print("photo serialize_datetime: ", message.photo.serialize_datetime)
+        print("photo sizes: ", message.photo.sizes)
+        print("photo stringify: ", message.photo.stringify)
+        print("photo video_sizes: ", message.photo.video_sizes)
+        print("photo to_dict: ", message.photo.to_dict)
+        print("photo to_json: ", message.photo.to_json)
+    else:
+        print("None")
+
 
     
 #     json_string = message.to_json()
