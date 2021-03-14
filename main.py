@@ -15,78 +15,80 @@ json_list = list()
 os.makedirs("photos", exist_ok = True)
 
 
-for message in client.iter_messages('vuopak', limit=20, reverse=True):
+for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # print(dir(message))
     print(message.id)
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
-    print(message.to_json())
+    # print(message.to_json())
     # print(message.get_entities_text())
     # print(client.download_media(message))
 
-    
-    json_string = message.to_json()
-    # convert string to dictionary
-    str_dict = json.loads(json_string)
-    # empty dict to store json data in a dict after filteration
-    json_nestedDict = dict()
-
-    for key, value in str_dict.items():
-        # for id and date
-        if key == "id" or key == "date":
-            json_nestedDict[key] = value
-        
-        # for edited date
-        if key == "edit_date" and value != None:
-            json_nestedDict["edited"] = value
-        
-        '''
-        # for text
-        if key == "message":
-            text_list = []
-            for text_type, inner_text in message.get_entities_text():
-                print(text_type)
-                print(type(text_type))
-                print(inner_text)
-                print(type(inner_text))
-                text_dict = {text_type : inner_text}
-                text_list.append(text_dict)
-            json_nestedDict["text"] = text_list
-        '''
-        
-        # for title
-        if key == "action":
-            for subKey, subValue in value.items():
-                if subKey == "title":
-                    json_nestedDict[subKey] = subValue
-
-
-    # for photos
-    # it generates photo and assign photo name in a variable
-    photo_name = client.download_media(message)
-    if photo_name != None:
-        path = os.path.join('photos', photo_name)
-        # to move photo to photos_dir
-        # if file exists then do not move it
-        # delete existed files
-        if not os.path.isfile(path):
-            shutil.move(photo_name, 'photos')
-        else:
-            os.remove(photo_name)
-
-        # to update json
-        json_nestedDict['photo'] = path
-        
-
-    # insert dict into list
-    json_list.append(json_nestedDict)
+    print(dir(message.photo))
 
     
-json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
-# putting list to a dict in order to obtain result.json file
-json_dict["messages"] = json_list
+#     json_string = message.to_json()
+#     # convert string to dictionary
+#     str_dict = json.loads(json_string)
+#     # empty dict to store json data in a dict after filteration
+#     json_nestedDict = dict()
 
-with open('custom_result.json', 'w', encoding='utf-8') as file:
-    json.dump(json_dict, file, ensure_ascii=False, indent=1)
+#     for key, value in str_dict.items():
+#         # for id and date
+#         if key == "id" or key == "date":
+#             json_nestedDict[key] = value
+        
+#         # for edited date
+#         if key == "edit_date" and value != None:
+#             json_nestedDict["edited"] = value
+        
+#         '''
+#         # for text
+#         if key == "message":
+#             text_list = []
+#             for text_type, inner_text in message.get_entities_text():
+#                 print(text_type)
+#                 print(type(text_type))
+#                 print(inner_text)
+#                 print(type(inner_text))
+#                 text_dict = {text_type : inner_text}
+#                 text_list.append(text_dict)
+#             json_nestedDict["text"] = text_list
+#         '''
+        
+#         # for title
+#         if key == "action":
+#             for subKey, subValue in value.items():
+#                 if subKey == "title":
+#                     json_nestedDict[subKey] = subValue
+
+
+#     # for photos
+#     # it generates photo and assign photo name in a variable
+#     photo_name = client.download_media(message)
+#     if photo_name != None:
+#         path = os.path.join('photos', photo_name)
+#         # to move photo to photos_dir
+#         # if file exists then do not move it
+#         # delete existed files
+#         if not os.path.isfile(path):
+#             shutil.move(photo_name, 'photos')
+#         else:
+#             os.remove(photo_name)
+
+#         # to update json
+#         json_nestedDict['photo'] = path
+        
+
+#     # insert dict into list
+#     json_list.append(json_nestedDict)
+
+    
+# json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
+# # putting list to a dict in order to obtain result.json file
+# json_dict["messages"] = json_list
+
+# with open('custom_result.json', 'w', encoding='utf-8') as file:
+#     json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
