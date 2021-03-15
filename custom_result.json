@@ -11,7 +11,7 @@
   {
    "id": 2,
    "date": "2020-10-30T06:39:19+00:00",
-   "photo": "photos\\photo_2020-10-30_06-39-19.jpg"
+   "photo": "photo_2020-10-30_06-39-19.jpg"
   },
   {
    "id": 3,
@@ -28,17 +28,17 @@
   {
    "id": 6,
    "date": "2020-10-30T07:20:26+00:00",
-   "photo": "photos\\photo_2020-10-30_07-20-26.jpg"
+   "photo": "photo_2020-10-30_07-20-26.jpg"
   },
   {
    "id": 7,
    "date": "2020-10-30T07:21:06+00:00",
-   "photo": "photos\\2020 Fall Semester MSCS Merit List.png"
+   "file": "2020 Fall Semester MSCS Merit List.png"
   },
   {
    "id": 8,
    "date": "2020-11-05T13:39:51+00:00",
-   "photo": "photos\\photo_2020-11-05_13-39-51.jpg"
+   "photo": "photo_2020-11-05_13-39-51.jpg"
   },
   {
    "id": 9,
@@ -47,7 +47,29 @@
   {
    "id": 10,
    "date": "2020-11-09T09:28:45+00:00",
-   "photo": "photos\\photo_2020-11-09_09-28-45.jpg"
+   "photo": "photo_2020-11-09_09-28-45.jpg"
+  },
+  {
+   "id": 11,
+   "date": "2020-11-09T11:29:14+00:00"
+  },
+  {
+   "id": 12,
+   "date": "2020-11-09T11:58:44+00:00"
+  },
+  {
+   "id": 13,
+   "date": "2020-11-09T12:04:16+00:00",
+   "photo": "photo_2020-11-09_12-04-16.jpg"
+  },
+  {
+   "id": 14,
+   "date": "2020-11-09T12:04:23+00:00"
+  },
+  {
+   "id": 15,
+   "date": "2020-11-09T13:58:38+00:00",
+   "file": "Michael_Sipser_Introduction_to_the_Theory_of_Computation_2012,_Thomson.pdf"
   }
  ]
 }
