@@ -15,7 +15,7 @@ json_list = list()
 os.makedirs("photos", exist_ok = True)
 
 
-for message in client.iter_messages('vuopak', limit=10, reverse=True):
+for message in client.iter_messages('vuopak', limit=6, reverse=True):
     # print(dir(message))
     print("message id: ", message.id)
     # print(message.date)
@@ -52,22 +52,22 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
     # file attributes
     # print(dir(message.file))
 
-    if message.file is not None:
-        print("file id: ", message.file.id)
-        print("file name: ", message.file.name)
-        print("file title: ", message.file.title)
-        print("file duration: ", message.file.duration)
-        print("file emoji: ", message.file.emoji)
-        print("file ext: ", message.file.ext)
-        print("file width: ", message.file.width)
-        print("file height: ", message.file.height)
-        print("file media: ", message.file.media)
-        print("file mime_type: ", message.file.mime_type)
-        print("file performer: ", message.file.performer)
-        print("file size: ", message.file.size)
-        print("file sticker_set: ", message.file.sticker_set)
-    else:
-        print("None")
+    # if message.file is not None:
+    #     print("file id: ", message.file.id)
+    #     print("file name: ", message.file.name)
+    #     print("file title: ", message.file.title)
+    #     print("file duration: ", message.file.duration)
+    #     print("file emoji: ", message.file.emoji)
+    #     print("file ext: ", message.file.ext)
+    #     print("file width: ", message.file.width)
+    #     print("file height: ", message.file.height)
+    #     print("file media: ", message.file.media)
+    #     print("file mime_type: ", message.file.mime_type)
+    #     print("file performer: ", message.file.performer)
+    #     print("file size: ", message.file.size)
+    #     print("file sticker_set: ", message.file.sticker_set)
+    # else:
+    #     print("None")
 
 
     
@@ -107,25 +107,25 @@ for message in client.iter_messages('vuopak', limit=10, reverse=True):
 #                     json_nestedDict[subKey] = subValue
 
 
-#     # for photos
-#     # it generates photo and assign photo name in a variable
-#     photo_name = client.download_media(message)
-#     if photo_name != None:
-#         path = os.path.join('photos', photo_name)
-#         # to move photo to photos_dir
-#         # if file exists then do not move it
-#         # delete existed files
-#         if not os.path.isfile(path):
-#             shutil.move(photo_name, 'photos')
-#         else:
-#             os.remove(photo_name)
+    # for photos
+    # it generates photo and assign photo name in a variable
+    photo_name = client.download_media(message, 'photos')
+    if photo_name != None:
+        split0 = photo_name.split(" ")
+        split1 = split0[1].split(".")
+        newName = split0[0] + "." + split1[1]
 
-#         # to update json
-#         json_nestedDict['photo'] = path
+        # delete overwritten files
+        if os.path.isfile(newName):
+            os.remove(photo_name)
         
 
-#     # insert dict into list
-#     json_list.append(json_nestedDict)
+        # to update json
+    #     json_nestedDict['photo'] = path
+        
+
+    # # insert dict into list
+    # json_list.append(json_nestedDict)
 
     
 # json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
