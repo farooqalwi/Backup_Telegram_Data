@@ -4,6 +4,7 @@ from telethon.sync import TelegramClient
 import json
 import os
 import shutil
+from threading import Thread
 
 client = TelegramClient('test_session', api_id, api_hash)
 client.start()
@@ -11,10 +12,22 @@ client.start()
 # to store json dict data in a list
 json_list = list()
 
+# to donwload files
+def file_downloader(start, end):
+    obj = client.iter_messages('vuopak', reverse=True)
+    list_obj = list(obj)
+    for i in range(start, end):
+        print("id: ", list_obj[i].id)
 
-for message in client.iter_messages('vuopak', limit=15, reverse=True):
+t1 = Thread(target=file_downloader, args=(1,10))
+t1.start()
+
+
+# file_downloader(10)
+
+# for message in client.iter_messages('vuopak', limit=15, reverse=True):
     # print(dir(message))
-    print("message id: ", message.id)
+    # print("message id: ", message.id)
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
@@ -68,63 +81,64 @@ for message in client.iter_messages('vuopak', limit=15, reverse=True):
 
 
     
-    json_string = message.to_json()
-    # convert string to dictionary
-    str_dict = json.loads(json_string)
-    # empty dict to store json data in a dict after filteration
-    json_nestedDict = dict()
+    # json_string = message.to_json()
+    # # convert string to dictionary
+    # str_dict = json.loads(json_string)
+    # # empty dict to store json data in a dict after filteration
+    # json_nestedDict = dict()
 
-    for key, value in str_dict.items():
-        # for id and date
-        if key == "id" or key == "date":
-            json_nestedDict[key] = value
+    # for key, value in str_dict.items():
+    #     # for id and date
+    #     if key == "id" or key == "date":
+    #         json_nestedDict[key] = value
         
-        # for edited date
-        if key == "edit_date" and value != None:
-            json_nestedDict["edited"] = value
+    #     # for edited date
+    #     if key == "edit_date" and value != None:
+    #         json_nestedDict["edited"] = value
         
-        '''
-        # for text
-        if key == "message":
-            text_list = []
-            for text_type, inner_text in message.get_entities_text():
-                print(text_type)
-                print(type(text_type))
-                print(inner_text)
-                print(type(inner_text))
-                text_dict = {text_type : inner_text}
-                text_list.append(text_dict)
-            json_nestedDict["text"] = text_list
-        '''
         
-        # for title
-        if key == "action":
-            for subKey, subValue in value.items():
-                if subKey == "title":
-                    json_nestedDict[subKey] = subValue
+        # # for text
+        # if key == "message":
+        #     text_list = []
+        #     for text_type, inner_text in message.get_entities_text():
+        #         print(text_type)
+        #         print(type(text_type))
+        #         print(inner_text)
+        #         print(type(inner_text))
+        #         text_dict = {text_type : inner_text}
+        #         text_list.append(text_dict)
+        #     json_nestedDict["text"] = text_list
+        
+        
+#         # for title
+#         if key == "action":
+#             for subKey, subValue in value.items():
+#                 if subKey == "title":
+#                     json_nestedDict[subKey] = subValue
 
 
-    # for media 
-    media_name = client.download_media(message)
-    if media_name != None:
-        # to update json
-        if 'photo_' and '.jpg' in media_name:
-            json_nestedDict['photo'] = media_name
-        elif '.mp4' or '.mp3' or '.png' or '.pdf' or '.exe' or '.doc' or '.docx':
-            json_nestedDict['file'] = media_name
-        elif '.png_thumb.jpg' or '.pdf_thumb.jpg' or '.png_thumb.jpg' or '.mp4_thumb.jpg':
-            json_nestedDict['thumbnail'] = media_name
-        else:
-            print("No file type: ", media_name)
+#     # for media 
+#     media_name = client.download_media(message)
+#     if media_name != None:
+#         # to update json
+#         if 'photo_' and '.jpg' in media_name:
+#             json_nestedDict['photo'] = media_name
+#         elif '.mp4' or '.mp3' or '.png' or '.pdf' or '.exe' or '.doc' or '.docx':
+#             json_nestedDict['file'] = media_name
+#         elif '.png_thumb.jpg' or '.pdf_thumb.jpg' or '.png_thumb.jpg' or '.mp4_thumb.jpg':
+#             json_nestedDict['thumbnail'] = media_name
+#         else:
+#             print("No file type: ", media_name)
 
-    # insert dict into list
-    json_list.append(json_nestedDict)
+#     # insert dict into list
+#     json_list.append(json_nestedDict)
 
     
-json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
-# putting list to a dict in order to obtain result.json file
-json_dict["messages"] = json_list
+# json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
+# # putting list to a dict in order to obtain result.json file
+# json_dict["messages"] = json_list
 
-with open('custom_result.json', 'w', encoding='utf-8') as file:
-    json.dump(json_dict, file, ensure_ascii=False, indent=1)
+# with open('custom_result.json', 'w', encoding='utf-8') as file:
+#     json.dump(json_dict, file, ensure_ascii=False, indent=1)
+
 
