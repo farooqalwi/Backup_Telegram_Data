@@ -19,7 +19,9 @@ list_obj = list(obj)
 def file_downloader(start, end):
     for i in range(start, end):
         print("id: ", list_obj[i].id)
-        print("media name: ", client.download_media(list_obj[i]))
+        if list_obj[i].photo is not None:
+            # print("photo id: ", list_obj[i].photo.id)
+            print("media name: ", client.download_media(list_obj[i]))
 
 t1 = Thread(target=file_downloader, args=(0,5))
 t1.start()
