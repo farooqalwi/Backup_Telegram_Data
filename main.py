@@ -12,18 +12,23 @@ client.start()
 # to store json dict data in a list
 json_list = list()
 
+obj = client.iter_messages('vuopak', reverse=True)
+list_obj = list(obj)
+
 # to donwload files
 def file_downloader(start, end):
-    obj = client.iter_messages('vuopak', reverse=True)
-    list_obj = list(obj)
     for i in range(start, end):
         print("id: ", list_obj[i].id)
+        print("media name: ", client.download_media(list_obj[i]))
 
-t1 = Thread(target=file_downloader, args=(1,10))
+t1 = Thread(target=file_downloader, args=(0,5))
 t1.start()
 
+t2 = Thread(target=file_downloader, args=(5,10))
+t2.start()
 
-# file_downloader(10)
+
+
 
 # for message in client.iter_messages('vuopak', limit=15, reverse=True):
     # print(dir(message))
