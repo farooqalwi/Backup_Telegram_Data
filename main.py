@@ -1,8 +1,12 @@
 # getting telegram development credentials in telegram API Development Tools
-from TG_id_hash import api_id, api_hash
+from decouple import config
+
+api_id = config("api_id")
+api_hash = config("api_hash")
+
+import os
 from telethon.sync import TelegramClient
 import json
-import os
 import shutil
 from threading import Thread
 
@@ -12,29 +16,29 @@ client.start()
 # to store json dict data in a list
 json_list = list()
 
-obj = client.iter_messages('vuopak', reverse=True)
-list_obj = list(obj)
+# obj = client.iter_messages('vuopak', reverse=True)
+# list_obj = list(obj)
 
-# to donwload files
-def file_downloader(start, end):
-    for i in range(start, end):
-        print("id: ", list_obj[i].id)
-        if list_obj[i].photo is not None:
-            # print("photo id: ", list_obj[i].photo.id)
-            print("media name: ", client.download_media(list_obj[i]))
+# # to donwload files
+# def file_downloader(start, end):
+#     for i in range(start, end):
+#         print("id: ", list_obj[i].id)
+#         if list_obj[i].photo is not None:
+#             # print("photo id: ", list_obj[i].photo.id)
+#             print("media name: ", client.download_media(list_obj[i]))
 
-t1 = Thread(target=file_downloader, args=(0,5))
-t1.start()
+# t1 = Thread(target=file_downloader, args=(0,5))
+# t1.start()
 
-t2 = Thread(target=file_downloader, args=(5,10))
-t2.start()
-
-
+# t2 = Thread(target=file_downloader, args=(5,10))
+# t2.start()
 
 
-# for message in client.iter_messages('vuopak', limit=15, reverse=True):
+
+
+for message in client.iter_messages('vuopak', limit=15, reverse=True):
     # print(dir(message))
-    # print("message id: ", message.id)
+    print("message id: ", message.id)
     # print(message.date)
     # print(message.text)
     # print(message.raw_text)
@@ -147,5 +151,4 @@ t2.start()
 
 # with open('custom_result.json', 'w', encoding='utf-8') as file:
 #     json.dump(json_dict, file, ensure_ascii=False, indent=1)
-
 
