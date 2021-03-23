@@ -16,8 +16,14 @@ client.start()
 # to store json dict data in a list
 json_list = list()
 
-# obj = client.iter_messages('vuopak', reverse=True)
-# list_obj = list(obj)
+obj = client.iter_messages('vuopak', reverse=True)
+list_obj = list(obj)
+
+# print("id: ", list_obj[2].id)
+# print("text: ", list_obj[2].text)
+obj_text = list_obj[2].text
+splitedText = obj_text.split("**")
+print(splitedText[1])
 
 # # to donwload files
 # def file_downloader(start, end):
@@ -33,7 +39,7 @@ json_list = list()
 # t2 = Thread(target=file_downloader, args=(5,10))
 # t2.start()
 
-
+'''
 
 
 for message in client.iter_messages('vuopak', limit=15, reverse=True):
@@ -153,3 +159,4 @@ json_dict["messages"] = json_list
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
+'''
