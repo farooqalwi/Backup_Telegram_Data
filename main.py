@@ -92,23 +92,23 @@ for message in client.iter_messages('vuopak', limit=15, reverse=True):
 
 
     
-    # json_string = message.to_json()
-    # # convert string to dictionary
-    # str_dict = json.loads(json_string)
-    # # empty dict to store json data in a dict after filteration
-    # json_nestedDict = dict()
+    json_string = message.to_json()
+    # convert string to dictionary
+    str_dict = json.loads(json_string)
+    # empty dict to store json data in a dict after filteration
+    json_nestedDict = dict()
 
-    # for key, value in str_dict.items():
-    #     # for id and date
-    #     if key == "id" or key == "date":
-    #         json_nestedDict[key] = value
+    for key, value in str_dict.items():
+        # for id and date
+        if key == "id" or key == "date":
+            json_nestedDict[key] = value
         
-    #     # for edited date
-    #     if key == "edit_date" and value != None:
-    #         json_nestedDict["edited"] = value
+        # for edited date
+        if key == "edit_date" and value != None:
+            json_nestedDict["edited"] = value
         
         
-        # # for text
+        # for text
         # if key == "message":
         #     text_list = []
         #     for text_type, inner_text in message.get_entities_text():
@@ -119,13 +119,14 @@ for message in client.iter_messages('vuopak', limit=15, reverse=True):
         #         text_dict = {text_type : inner_text}
         #         text_list.append(text_dict)
         #     json_nestedDict["text"] = text_list
+        json_nestedDict["text"] = message.text
         
         
-#         # for title
-#         if key == "action":
-#             for subKey, subValue in value.items():
-#                 if subKey == "title":
-#                     json_nestedDict[subKey] = subValue
+        # for title
+        if key == "action":
+            for subKey, subValue in value.items():
+                if subKey == "title":
+                    json_nestedDict[subKey] = subValue
 
 
 #     # for media 
@@ -141,14 +142,14 @@ for message in client.iter_messages('vuopak', limit=15, reverse=True):
 #         else:
 #             print("No file type: ", media_name)
 
-#     # insert dict into list
-#     json_list.append(json_nestedDict)
+    # insert dict into list
+    json_list.append(json_nestedDict)
 
     
-# json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
-# # putting list to a dict in order to obtain result.json file
-# json_dict["messages"] = json_list
+json_dict = { "name": "Virtual University of Pakistan", "type": "public_channel", "id": 9999969886, "messages": []}
+# putting list to a dict in order to obtain result.json file
+json_dict["messages"] = json_list
 
-# with open('custom_result.json', 'w', encoding='utf-8') as file:
-#     json.dump(json_dict, file, ensure_ascii=False, indent=1)
+with open('custom_result.json', 'w', encoding='utf-8') as file:
+    json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
