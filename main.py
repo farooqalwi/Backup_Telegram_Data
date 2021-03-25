@@ -19,11 +19,14 @@ json_list = list()
 obj = client.iter_messages('vuopak', reverse=True)
 list_obj = list(obj)
 
+# print(list_obj[210].text)
+
 # print("id: ", list_obj[2].id)
+# print(list_obj[2].text)
 # print("text: ", list_obj[2].text)
-obj_text = list_obj[2].text
-splitedText = obj_text.split("**")
-print(splitedText[1])
+# obj_text = list_obj[2].text
+# splitedText = obj_text.split("**")
+# print(splitedText[1])
 
 # # to donwload files
 # def file_downloader(start, end):
@@ -39,10 +42,10 @@ print(splitedText[1])
 # t2 = Thread(target=file_downloader, args=(5,10))
 # t2.start()
 
-'''
 
 
-for message in client.iter_messages('vuopak', limit=15, reverse=True):
+
+for message in client.iter_messages('vuopak', limit=220, reverse=True):
     # print(dir(message))
     print("message id: ", message.id)
     # print(message.date)
@@ -125,7 +128,9 @@ for message in client.iter_messages('vuopak', limit=15, reverse=True):
         #         text_dict = {text_type : inner_text}
         #         text_list.append(text_dict)
         #     json_nestedDict["text"] = text_list
-        json_nestedDict["text"] = message.text
+        
+        if message.text is not None:
+            json_nestedDict["text"] = message.text.format()
         
         
         # for title
@@ -159,4 +164,5 @@ json_dict["messages"] = json_list
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
 
-'''
+
+

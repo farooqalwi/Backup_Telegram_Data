@@ -1,0 +1,28 @@
+input > print(list_obj[215].text)
+output >
+"**All the finals exams of Fall 2020 session conducted at Timergarah (NTMG01) Campus has been cancelled\n**__Published On:  Friday, March 12, 2021\n\n__Due to some serious irregularities found at NTMG01 center, University has decided to Cancel the Fall 2020 Final Term Examinations conducted between **February 27, 2021 to March 10, 2021**. \n\nThe papers conducted at NTMG01 between the above period will be considered Null and Void.  \n\nThe Re-Examination will start from March 15, 2021.\n\nThe new schedule has been updated and available on date sheet interface. The affected students are advised to take a fresh print of their Exam Entrance Slip from the following link:\n\nhttp://datesheet.vu.edu.pk\n\nNote: The University is fully committed with its vision to maintain the integrity & sanctity of the examinations intact at any cost. \n\nhttps://vu.edu.pk/NewsDetails.aspx?type=&NewsId=4410"
+
+--------------------------------------------------------------------------------------------------
+
+input > print(list_obj[215].text.capitalize())
+output >
+"**all the finals exams of fall 2020 session conducted at timergarah (ntmg01) campus has been cancelled\n**__published on:  friday, march 12, 2021\n\n__due to some serious irregularities found at ntmg01 center, university has decided to cancel the fall 2020 final term examinations conducted between **february 27, 2021 to march 10, 2021**. \n\nthe papers conducted at ntmg01 between the above period will be considered null and void.  \n\nthe re-examination will start from march 15, 2021.\n\nthe new schedule has been updated and available on date sheet interface. the affected students are advised to take a fresh print of their exam entrance slip from the following link:\n\nhttp://datesheet.vu.edu.pk\n\nnote: the university is fully committed with its vision to maintain the integrity & sanctity of the examinations intact at any cost. \n\nhttps://vu.edu.pk/newsdetails.aspx?type=&newsid=4410"
+
+
+--------------------------------------------------------------------------------------------------
+
+input > print(list_obj[215].text.casefold())
+output >
+"**all the finals exams of fall 2020 session conducted at timergarah (ntmg01) campus has been cancelled\n**__published on:  friday, march 12, 2021\n\n__due to some serious irregularities found at ntmg01 center, university has decided to cancel the fall 2020 final term examinations conducted between **february 27, 2021 to march 10, 2021**. \n\nthe papers conducted at ntmg01 between the above period will be considered null and void.  \n\nthe re-examination will start from march 15, 2021.\n\nthe new schedule has been updated and available on date sheet interface. the affected students are advised to take a fresh print of their exam entrance slip from the following link:\n\nhttp://datesheet.vu.edu.pk\n\nnote: the university is fully committed with its vision to maintain the integrity & sanctity of the examinations intact at any cost. \n\nhttps://vu.edu.pk/newsdetails.aspx?type=&newsid=4410"
+
+
+--------------------------------------------------------------------------------------------------
+
+input > print(list_obj[215].text.format())
+output >
+"**All the finals exams of Fall 2020 session conducted at Timergarah (NTMG01) Campus has been cancelled\n**__Published On:  Friday, March 12, 2021\n\n__Due to some serious irregularities found at NTMG01 center, University has decided to Cancel the Fall 2020 Final Term Examinations conducted between **February 27, 2021 to March 10, 2021**. \n\nThe papers conducted at NTMG01 between the above period will be considered Null and Void.  \n\nThe Re-Examination will start from March 15, 2021.\n\nThe new schedule has been updated and available on date sheet interface. The affected students are advised to take a fresh print of their Exam Entrance Slip from the following link:\n\nhttp://datesheet.vu.edu.pk\n\nNote: The University is fully committed with its vision to maintain the integrity & sanctity of the examinations intact at any cost. \n\nhttps://vu.edu.pk/NewsDetails.aspx?type=&NewsId=4410"
+
+
+
+
+--------------------------------------------------------------------------------------------------
