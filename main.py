@@ -16,10 +16,10 @@ client.start()
 # to store json dict data in a list
 json_list = list()
 
-obj = client.iter_messages('vuopak', reverse=True)
-list_obj = list(obj)
+# obj = client.iter_messages('vuopak', reverse=True)
+# list_obj = list(obj)
 
-# print(list_obj[210].text)
+# print(list_obj[5].id)
 
 # print("id: ", list_obj[2].id)
 # print(list_obj[2].text)
@@ -33,8 +33,10 @@ list_obj = list(obj)
 #     for i in range(start, end):
 #         print("id: ", list_obj[i].id)
 #         if list_obj[i].photo is not None:
-#             # print("photo id: ", list_obj[i].photo.id)
+#             print("photo id: ", list_obj[i].photo.id)
 #             print("media name: ", client.download_media(list_obj[i]))
+
+# file_downloader(0, 16)
 
 # t1 = Thread(target=file_downloader, args=(0,5))
 # t1.start()
@@ -44,8 +46,7 @@ list_obj = list(obj)
 
 
 
-
-for message in client.iter_messages('vuopak', limit=220, reverse=True):
+for message in client.iter_messages('vuopak', limit=6, reverse=True):
     # print(dir(message))
     print("message id: ", message.id)
     # print(message.date)
@@ -102,10 +103,12 @@ for message in client.iter_messages('vuopak', limit=220, reverse=True):
 
     
     json_string = message.to_json()
+    # print(json_string)
     # convert string to dictionary
     str_dict = json.loads(json_string)
     # empty dict to store json data in a dict after filteration
     json_nestedDict = dict()
+    # print(str_dict.items())
 
     for key, value in str_dict.items():
         # for id and date
@@ -116,42 +119,35 @@ for message in client.iter_messages('vuopak', limit=220, reverse=True):
         if key == "edit_date" and value != None:
             json_nestedDict["edited"] = value
         
-        
-        # for text
-        # if key == "message":
-        #     text_list = []
-        #     for text_type, inner_text in message.get_entities_text():
-        #         print(text_type)
-        #         print(type(text_type))
-        #         print(inner_text)
-        #         print(type(inner_text))
-        #         text_dict = {text_type : inner_text}
-        #         text_list.append(text_dict)
-        #     json_nestedDict["text"] = text_list
-        
-        if message.text is not None:
-            json_nestedDict["text"] = message.text.format()
-        
-        
         # for title
         if key == "action":
             for subKey, subValue in value.items():
                 if subKey == "title":
                     json_nestedDict[subKey] = subValue
 
+    # for reply_to_msg_id
+    if message.reply_to_msg_id != None:
+        json_nestedDict["reply_to_msg_id"] = message.reply_to_msg_id
+    
+    
+    # for media 
+    media_name = client.download_media(message, 'photos')
+    if media_name != None:
+        # to update json
+        if 'photo_' and '.jpg' in media_name:
+            json_nestedDict['photo'] = media_name
+        elif '.mp4' or '.mp3' or '.png' or '.pdf' or '.exe' or '.doc' or '.docx':
+            json_nestedDict['file'] = media_name
+            json_nestedDict['mime_type'] = message.file.mime_type
+        elif '.png_thumb.jpg' or '.pdf_thumb.jpg' or '.png_thumb.jpg' or '.mp4_thumb.jpg':
+            json_nestedDict['thumbnail'] = media_name
+        else:
+            print("No file type: ", media_name)
 
-#     # for media 
-#     media_name = client.download_media(message)
-#     if media_name != None:
-#         # to update json
-#         if 'photo_' and '.jpg' in media_name:
-#             json_nestedDict['photo'] = media_name
-#         elif '.mp4' or '.mp3' or '.png' or '.pdf' or '.exe' or '.doc' or '.docx':
-#             json_nestedDict['file'] = media_name
-#         elif '.png_thumb.jpg' or '.pdf_thumb.jpg' or '.png_thumb.jpg' or '.mp4_thumb.jpg':
-#             json_nestedDict['thumbnail'] = media_name
-#         else:
-#             print("No file type: ", media_name)
+
+    # for text
+    if message.text is not None:
+        json_nestedDict["text"] = message.text
 
     # insert dict into list
     json_list.append(json_nestedDict)
@@ -163,6 +159,5 @@ json_dict["messages"] = json_list
 
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
-
 
 
