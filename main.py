@@ -46,7 +46,7 @@ json_list = list()
 
 
 
-for message in client.iter_messages('vuopak', limit=6, reverse=True):
+for message in client.iter_messages('vuopak', limit=220, reverse=True):
     # print(dir(message))
     print("message id: ", message.id)
     # print(message.date)
@@ -116,7 +116,7 @@ for message in client.iter_messages('vuopak', limit=6, reverse=True):
             json_nestedDict[key] = value
         
         # for edited date
-        if key == "edit_date" and value != None:
+        if key == "edit_date" and value is not None:
             json_nestedDict["edited"] = value
         
         # for title
@@ -126,23 +126,27 @@ for message in client.iter_messages('vuopak', limit=6, reverse=True):
                     json_nestedDict[subKey] = subValue
 
     # for reply_to_msg_id
-    if message.reply_to_msg_id != None:
+    if message.reply_to_msg_id is not None:
         json_nestedDict["reply_to_msg_id"] = message.reply_to_msg_id
     
-    
-    # for media 
-    media_name = client.download_media(message, 'photos')
-    if media_name != None:
-        # to update json
-        if 'photo_' and '.jpg' in media_name:
-            json_nestedDict['photo'] = media_name
-        elif '.mp4' or '.mp3' or '.png' or '.pdf' or '.exe' or '.doc' or '.docx':
-            json_nestedDict['file'] = media_name
-            json_nestedDict['mime_type'] = message.file.mime_type
-        elif '.png_thumb.jpg' or '.pdf_thumb.jpg' or '.png_thumb.jpg' or '.mp4_thumb.jpg':
-            json_nestedDict['thumbnail'] = media_name
-        else:
-            print("No file type: ", media_name)
+
+    # for media
+    if message.file is not None and 'jpeg' in message.file.mime_type:
+        # jpeg is for photos
+        media_name = client.download_media(message, 'photos')
+        if media_name is not None:
+            # to update json
+            if 'photo_' and '.jpg' in media_name:
+                json_nestedDict['photo'] = media_name
+    elif message.file is not None and ('png' in message.file.mime_type or 'mpeg' in message.file.mime_type or 'officedocument' in message.file.mime_type or 'msword' in message.file.mime_type):
+        # mpeg is for mp3, officedocument is for docx and msword files is for doc
+        media_name = client.download_media(message, 'files')
+        if media_name is not None:
+            # to update json
+            if '.mp4' or '.mp3' or '.png' or '.pdf' or '.exe' or '.doc' or '.docx' in media_name:
+                json_nestedDict['file'] = media_name
+                json_nestedDict['mime_type'] = message.file.mime_type
+
 
 
     # for text
