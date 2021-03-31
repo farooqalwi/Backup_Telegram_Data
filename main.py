@@ -153,7 +153,7 @@ for message in client.iter_messages('vuopak', limit=110, reverse=True):
     
     # for thumbnail
     if message.file is not None and ('png' in message.file.mime_type or 'pdf' in message.file.mime_type):
-        media_name = client.download_media(message, 'files', thumb=1)
+        media_name = client.download_media(message, 'files', thumb=-1)
         if media_name is not None:
             json_nestedDict['thumbnail'] = media_name
             if 'pdf' in message.file.mime_type:
