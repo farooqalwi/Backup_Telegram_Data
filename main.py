@@ -16,10 +16,14 @@ client.start()
 # to store json dict data in a list
 json_list = list()
 
+# to test individual index
 # obj = client.iter_messages('vuopak', reverse=True)
 # list_obj = list(obj)
+# node = list_obj[6]
+# print("id: ",node.id)
+# print(client.download_media(node,[0]))
 
-# print(list_obj[5].id)
+
 
 # print("id: ", list_obj[2].id)
 # print(list_obj[2].text)
@@ -46,7 +50,7 @@ json_list = list()
 
 
 
-for message in client.iter_messages('vuopak', limit=220, reverse=True):
+for message in client.iter_messages('vuopak', limit=110, reverse=True):
     # print(dir(message))
     print("message id: ", message.id)
     # print(message.date)
@@ -143,9 +147,19 @@ for message in client.iter_messages('vuopak', limit=220, reverse=True):
         media_name = client.download_media(message, 'files')
         if media_name is not None:
             # to update json
-            if '.mp4' or '.mp3' or '.png' or '.pdf' or '.exe' or '.doc' or '.docx' in media_name:
+            if '.mp4' or '.mp3' or '.png' or '.exe' or '.doc' or '.docx' in media_name:
                 json_nestedDict['file'] = media_name
                 json_nestedDict['mime_type'] = message.file.mime_type
+    
+    # for thumbnail
+    if message.file is not None and ('png' in message.file.mime_type or 'pdf' in message.file.mime_type):
+        media_name = client.download_media(message, 'files', thumb=1)
+        if media_name is not None:
+            json_nestedDict['thumbnail'] = media_name
+            if 'pdf' in message.file.mime_type:
+                json_nestedDict['mime_type'] = message.file.mime_type
+    
+   
 
 
 
