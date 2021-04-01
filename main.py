@@ -50,7 +50,7 @@ json_list = list()
 
 
 
-for message in client.iter_messages('vuopak', limit=110, reverse=True):
+for message in client.iter_messages('vuopak', limit=220, reverse=True):
     # print(dir(message))
     print("message id: ", message.id)
     # print(message.date)
@@ -148,16 +148,14 @@ for message in client.iter_messages('vuopak', limit=110, reverse=True):
         if media_name is not None:
             # to update json
             if '.mp4' or '.mp3' or '.png' or '.exe' or '.doc' or '.docx' in media_name:
+                thumb_name = media_name + "_thumb.jpg"
                 json_nestedDict['file'] = media_name
                 json_nestedDict['mime_type'] = message.file.mime_type
     
     # for thumbnail
-    if message.file is not None and ('png' in message.file.mime_type or 'pdf' in message.file.mime_type):
+    if message.file is not None and 'png' in message.file.mime_type:
         media_name = client.download_media(message, 'files', thumb=-1)
-        if media_name is not None:
-            json_nestedDict['thumbnail'] = media_name
-            if 'pdf' in message.file.mime_type:
-                json_nestedDict['mime_type'] = message.file.mime_type
+        json_nestedDict['thumbnail'] = thumb_name
     
    
 
