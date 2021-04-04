@@ -1,14 +1,27 @@
-# getting telegram development credentials in telegram API Development Tools
-from decouple import config
-
-api_id = config("api_id")
-api_hash = config("api_hash")
-
+import configparser
 import os
 from telethon.sync import TelegramClient
 import json
 import shutil
 from threading import Thread
+
+# telegram development credentials in telegram API Development Tools
+config = configparser.ConfigParser()
+
+if not os.path.exists('config.ini'):
+    api_id_from_user = input("Enter API ID first time: ")
+    api_hash_from_user = input("Enter API HASH first time: ")
+    # Writing Configs
+    config['Telegram'] = {'api_id': api_id_from_user, 'api_hash': api_hash_from_user}
+    with open('config.ini', 'w') as configfile:
+        config.write(configfile)
+
+
+# Reading Configs
+config.read("config.ini")
+# Setting configuration values
+api_id = int(config['Telegram']['api_id'])
+api_hash = config['Telegram']['api_hash']
 
 client = TelegramClient('test_session', api_id, api_hash)
 client.start()
@@ -16,23 +29,14 @@ client.start()
 # to store json dict data in a list
 json_list = list()
 
+
 # to test individual index
 # obj = client.iter_messages('vuopak', reverse=True)
 # list_obj = list(obj)
-# node = list_obj[6]
-# print("id: ",node.id)
-# print(client.download_media(node,[0]))
+# print("id: ",list_obj[1].id)
+# print(client.download_media(list_obj[1])
 
-
-
-# print("id: ", list_obj[2].id)
-# print(list_obj[2].text)
-# print("text: ", list_obj[2].text)
-# obj_text = list_obj[2].text
-# splitedText = obj_text.split("**")
-# print(splitedText[1])
-
-# # to donwload files
+# to donwload files
 # def file_downloader(start, end):
 #     for i in range(start, end):
 #         print("id: ", list_obj[i].id)
@@ -88,19 +92,19 @@ for message in client.iter_messages('vuopak', limit=220, reverse=True):
     # print(dir(message.file))
 
     # if message.file is not None:
-    #     print("file id: ", message.file.id)
-    #     print("file name: ", message.file.name)
-    #     print("file title: ", message.file.title)
-    #     print("file duration: ", message.file.duration)
-    #     print("file emoji: ", message.file.emoji)
-    #     print("file ext: ", message.file.ext)
-    #     print("file width: ", message.file.width)
-    #     print("file height: ", message.file.height)
-    #     print("file media: ", message.file.media)
-    #     print("file mime_type: ", message.file.mime_type)
-    #     print("file performer: ", message.file.performer)
-    #     print("file size: ", message.file.size)
-    #     print("file sticker_set: ", message.file.sticker_set)
+        # print("file id: ", message.file.id)
+        # print("file name: ", message.file.name)
+        # print("file title: ", message.file.title)
+        # print("file duration: ", message.file.duration)
+        # print("file emoji: ", message.file.emoji)
+        # print("file ext: ", message.file.ext)
+        # print("file width: ", message.file.width)
+        # print("file height: ", message.file.height)
+        # print("file media: ", message.file.media)
+        # print("file mime_type: ", message.file.mime_type)
+        # print("file performer: ", message.file.performer)
+        # print("file size: ", message.file.size)
+        # print("file sticker_set: ", message.file.sticker_set)
     # else:
     #     print("None")
 
@@ -151,15 +155,14 @@ for message in client.iter_messages('vuopak', limit=220, reverse=True):
                 thumb_name = media_name + "_thumb.jpg"
                 json_nestedDict['file'] = media_name
                 json_nestedDict['mime_type'] = message.file.mime_type
+                json_nestedDict['width'] = message.file.width
+                json_nestedDict['height'] = message.file.height
     
     # for thumbnail
     if message.file is not None and 'png' in message.file.mime_type:
         media_name = client.download_media(message, 'files', thumb=-1)
         json_nestedDict['thumbnail'] = thumb_name
     
-   
-
-
 
     # for text
     if message.text is not None:
@@ -175,5 +178,4 @@ json_dict["messages"] = json_list
 
 with open('custom_result.json', 'w', encoding='utf-8') as file:
     json.dump(json_dict, file, ensure_ascii=False, indent=1)
-
 
