@@ -30,30 +30,6 @@ client.start()
 json_list = list()
 
 
-# to test individual index
-# obj = client.iter_messages('vuopak', reverse=True)
-# list_obj = list(obj)
-# print("id: ",list_obj[1].id)
-# print(client.download_media(list_obj[1])
-
-# to donwload files
-# def file_downloader(start, end):
-#     for i in range(start, end):
-#         print("id: ", list_obj[i].id)
-#         if list_obj[i].photo is not None:
-#             print("photo id: ", list_obj[i].photo.id)
-#             print("media name: ", client.download_media(list_obj[i]))
-
-# file_downloader(0, 16)
-
-# t1 = Thread(target=file_downloader, args=(0,5))
-# t1.start()
-
-# t2 = Thread(target=file_downloader, args=(5,10))
-# t2.start()
-
-
-
 for message in client.iter_messages('vuopak', limit=220, reverse=True):
     # print(dir(message))
     print("message id: ", message.id)
